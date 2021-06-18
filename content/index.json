@@ -1,0 +1,66 @@
+{
+  "route": "/",
+  "title": "Inicio",
+  "displayTitle": false,
+  "sections": [
+    {
+      "type": "carousel",
+      "height": "600px",
+      "items": [
+        {
+          "title": "Carpas industriales",
+          "caption": "Obtén un nuevo espacio de almacenamiento o área de trabajo que se adapte a tus necesidades de tamaño, iluminación y diseño.",
+          "imageUrl": "https://placeimg.com/640/480/any",
+          "button": {
+            "label": "Conocer más",
+            "link": "/CarpasIndustriales"
+          }
+        },
+        {
+          "title": "Carpas para eventos",
+          "caption": "Agrega a tu fecha especial el toque de elegancia y profesionalismo que soñaste para sorprender a tus clientes o colaboradores.",
+          "imageUrl": "https://placeimg.com/640/480/any",
+          "button": {
+            "label": "Conocer más",
+            "link": "/CarpasParaEventos"
+          }
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Acerca de nosotros",
+      "paragraphs": ["Somos una empresa..."],
+      "subsections": [
+        {
+          "title": "Misión",
+          "caption": "Acondicionar cualquier espacio para que nuestros clientes puedan disponer de él con la comodidad que requieren para llevar a cabo su evento o proyecto, así como brindarles una atención y servicio de calidad para satisfacer sus necesidades.",
+          "imageUrl": "https://placeimg.com/640/480/any"
+        },
+        {
+          "title": "Visión",
+          "caption": "Convertirnos en una empresa reconocida por el profesionalismo y excelencia del servicios que ofrecemos para proporcionar a nuestros clientes experiencias que constantemente superen sus expectativas.",
+          "imageUrl": "https://placeimg.com/640/480/any"
+        }
+      ]
+    },
+    {
+      "type": "customers",
+      "title": "Nuestros clientes",
+      "list": [
+        {
+          "name": "Nombre",
+          "imageUrl": "https://placeimg.com/100/100/any"
+        },
+        {
+          "name": "Nombre",
+          "imageUrl": "https://placeimg.com/100/100/any"
+        },
+        {
+          "name": "Nombre",
+          "imageUrl": "https://placeimg.com/100/100/any"
+        }
+      ]
+    }
+  ]
+}
