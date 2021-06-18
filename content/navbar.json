@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Inicio",
+    "route": "/"
+  },
+  {
+    "id": "CarpasIndustrialesNavbarItem",
+    "isDropdown": true,
+    "title": "Carpas industriales",
+    "route": "/CarpasIndustriales",
+    "subitems": [
+      {
+        "title": "Áreas de trabajo",
+        "route": "/CarpasIndustriales#AreasDeTrabajo"
+      },
+      {
+        "title": "Almacenes",
+        "route": "/CarpasIndustriales#Almacenes"
+      }
+    ]
+  },
+  {
+    "id": "CarpasParaEventosNavbarItem",
+    "isDropdown": true,
+    "title": "Carpas para eventos",
+    "route": "/CarpasParaEventos",
+    "subitems": [
+      {
+        "title": "Eventos sociales",
+        "route": "/CarpasParaEventos#EventosSociales"
+      },
+      {
+        "title": "Eventos empresariales",
+        "route": "/CarpasParaEventos#EventosEmpresariales"
+      },
+      {
+        "title": "Eventos comerciales y exposiciones",
+        "route": "/CarpasParaEventos#EventosComercialesYExposiciones"
+      }
+    ]
+  },
+  {
+    "title": "Contacto",
+    "route": "/Contacto"
+  }
+]

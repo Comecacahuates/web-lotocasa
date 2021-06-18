@@ -5,52 +5,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
 import NavbarDropdown from "../components/navbardropdown";
 
-const navbarItems = [
-  {
-    title: "Inicio",
-    route: "/",
-  },
-  {
-    id: "CarpasIndustrialesNavbarItem",
-    isDropdown: true,
-    title: "Carpas industriales",
-    route: "/CarpasIndustriales",
-    subitems: [
-      {
-        title: "Áreas de trabajo",
-        route: "/CarpasIndustriales#AreasDeTrabajo",
-      },
-      {
-        title: "Almacenes",
-        route: "/CarpasIndustriales#Almacenes",
-      },
-    ],
-  },
-  {
-    id: "CarpasParaEventosNavbarItem",
-    isDropdown: true,
-    title: "Carpas para eventos",
-    route: "/CarpasParaEventos",
-    subitems: [
-      {
-        title: "Eventos sociales",
-        route: "/CarpasParaEventos#EventosSociales",
-      },
-      {
-        title: "Eventos empresariales",
-        route: "/CarpasParaEventos#EventosEmpresariales",
-      },
-      {
-        title: "Eventos comerciales y exposiciones",
-        route: "/CarpasParaEventos#EventosComercialesYExposiciones",
-      },
-    ],
-  },
-  {
-    title: "Contacto",
-    route: "/Contacto",
-  },
-];
+import navbarItems from "../content/navbar.json";
 
 /**
  * Propiedades del componente de la barra de navegación
@@ -83,19 +38,21 @@ export default function (props: NavbarProps) {
             {navbarItems.map((navbarItem, index) =>
               navbarItem.isDropdown ? (
                 <NavbarDropdown
+                  key={index}
                   title={navbarItem.title}
                   id={navbarItem.id}
                   autoClose={true}
                   active={navbarItem.route === activeItem}
                 >
                   {navbarItem.subitems.map((subitem, index) => (
-                    <NavDropdown.Item href={subitem.route}>
+                    <NavDropdown.Item key={index} href={subitem.route}>
                       {subitem.title}
                     </NavDropdown.Item>
                   ))}
                 </NavbarDropdown>
               ) : (
                 <Nav.Link
+                  key={index}
                   href={navbarItem.route}
                   active={navbarItem.route === activeItem}
                 >
