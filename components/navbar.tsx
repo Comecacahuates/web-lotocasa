@@ -17,7 +17,7 @@ export interface NavbarProps {
 
 /**
  * Componente de la barra de navegación
- * @param{NavbarProps} props Propiedades
+ * @param {NavbarProps} props Propiedades
  * @returns Componente
  */
 export default function (props: NavbarProps) {
@@ -35,7 +35,7 @@ export default function (props: NavbarProps) {
         {/* Elementos de la barra de navegación */}
         <Navbar.Collapse>
           <Nav className="ms-auto" activeKey={activeItem}>
-            {navbarItems.map((navbarItem, index) =>
+            {navbarItems.map((navbarItem: any, index: number) =>
               navbarItem.isDropdown ? (
                 <NavbarDropdown
                   key={index}
@@ -44,7 +44,7 @@ export default function (props: NavbarProps) {
                   autoClose={true}
                   active={navbarItem.route === activeItem}
                 >
-                  {navbarItem.subitems.map((subitem, index) => (
+                  {navbarItem.subitems.map((subitem: any, index: number) => (
                     <NavDropdown.Item key={index} href={subitem.route}>
                       {subitem.title}
                     </NavDropdown.Item>
