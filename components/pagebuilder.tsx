@@ -5,6 +5,7 @@ import PageTitle from "../components/pagetitle";
 import Carousel from "../components/carousel";
 import TextSection from "../components/textsection";
 import CustomersSection from "../components/customerssection";
+import ContactSection from "../components/contactsection";
 
 /**
  * Propiedades del componente de contrucción de página
@@ -43,6 +44,9 @@ export default function PageBuilder(props: PageBuilder) {
         }
         if (section.type === "customers") {
           return <CustomersSection key={index} content={section} />;
+        }
+        if (section.type === "contact") {
+          return <ContactSection key={index} content={section} />;
         }
       })}
     </Layout>
