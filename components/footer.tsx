@@ -22,7 +22,7 @@ export default function Footer() {
               <h5 className="py-3">
                 <a href={item.link}>{item.title}</a>
               </h5>
-              <ul className="list-unstyled">
+              <ul className="list-unstyled text-small">
                 {/* Subelementos de la columna */}
                 {item.subitems.map((subitem: any, index: number) => (
                   <li className="my-2">
