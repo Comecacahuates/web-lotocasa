@@ -1,0 +1,53 @@
+{
+  "route": "/Contacto",
+  "title": "Contacto",
+  "displayTitle": true,
+  "sections": [
+    {
+      "type": "contact",
+      "meansOfContact": {
+        "title": "Medios de contacto",
+        "list": [
+          {
+            "title": "55 5769 2994",
+            "icon": "telephone-fill",
+            "url": "tel:5557692994"
+          },
+          {
+            "title": "55 5769 2668",
+            "icon": "telephone-fill",
+            "url": "tel:5557692668"
+          },
+          {
+            "title": "55 4031 1943",
+            "icon": "whatsapp",
+            "url": "https://api.whatsapp.com/send?phone=+5215540311943"
+          },
+          {
+            "title": "lonastoldosycarpas@gmail.com",
+            "icon": "envelope-fill",
+            "url": "mailto:lonastoldosycarpas@gmail.com"
+          }
+        ]
+      },
+      "address": {
+        "title": "Dirección",
+        "value": "Lázaro Cárdenas 72, San Juan Ixhuatepec, 54180 Tlalnepantla de Baz, Estado de México"
+      },
+      "openingHours": {
+        "title": "Horario de atención",
+        "list": [
+          {
+            "days": "lun - sab",
+            "hours": "9:00 - 20:00"
+          }
+        ]
+      },
+      "map": {
+        "title": "Ubicación",
+        "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.462957624455!2d-99.10628228509191!3d19.521727986833795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fa60a183de4b%3A0x31e90fe62840252c!2sLonas%20Toldos%20y%20Carpas%20sa%20de%20cv!5e0!3m2!1ses-419!2smx!4v1624097119032!5m2!1ses-419!2smx",
+        "height": "400px"
+      }
+    }
+  ]
+}
