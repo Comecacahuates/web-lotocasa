@@ -37,7 +37,7 @@ export default function (props: NavbarProps) {
           <Nav className="ms-auto" activeKey={activeItem}>
             {navbarItems.map((navbarItem: any, index: number) =>
               navbarItem.isDropdown ? (
-                <NavbarDropdown
+                <NavDropdown
                   key={index}
                   title={navbarItem.title}
                   id={navbarItem.id}
@@ -49,7 +49,7 @@ export default function (props: NavbarProps) {
                       {subitem.title}
                     </NavDropdown.Item>
                   ))}
-                </NavbarDropdown>
+                </NavDropdown>
               ) : (
                 <Nav.Link
                   key={index}
