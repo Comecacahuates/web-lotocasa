@@ -42,12 +42,35 @@
     },
     {
       "type": "text",
+      "title": "Nuestros servicios",
+      "texts": ["Nuestros servicios son..."],
+      "subsections": [
+        {
+          "title": "Carpas industriales",
+          "text": "Obtén un nuevo espacio de almacenamiento o área de trabajo que se adapte a tus necesidades de tamaño, iluminación y diseño.",
+          "button": {
+            "label": "Conocer más",
+            "link": "/CarpasIndustriales"
+          }
+        },
+        {
+          "title": "Carpas para eventos",
+          "text": "Agrega a tu fecha especial el toque de elegancia y profesionalismo que soñaste para sorprender a tus clientes o colaboradores.",
+          "button": {
+            "label": "Conocer más",
+            "link": "/CarpasParaEventos"
+          }
+        }
+      ]
+    },
+    {
+      "type": "text",
       "title": "Acerca de nosotros",
-      "paragraphs": ["Somos una empresa..."],
+      "texts": ["Somos una empresa..."],
       "subsections": [
         {
           "title": "Misión",
-          "caption": "Acondicionar cualquier espacio para que nuestros clientes puedan disponer de él con la comodidad que requieren para llevar a cabo su evento o proyecto, así como brindarles una atención y servicio de calidad para satisfacer sus necesidades.",
+          "text": "Acondicionar cualquier espacio para que nuestros clientes puedan disponer de él con la comodidad que requieren para llevar a cabo su evento o proyecto, así como brindarles una atención y servicio de calidad para satisfacer sus necesidades.",
           "image": {
             "src": "https://placeimg.com/640/480/any",
             "width": 640,
@@ -56,7 +79,7 @@
         },
         {
           "title": "Visión",
-          "caption": "Convertirnos en una empresa reconocida por el profesionalismo y excelencia del servicios que ofrecemos para proporcionar a nuestros clientes experiencias que constantemente superen sus expectativas.",
+          "text": "Convertirnos en una empresa reconocida por el profesionalismo y excelencia del servicios que ofrecemos para proporcionar a nuestros clientes experiencias que constantemente superen sus expectativas.",
           "image": {
             "src": "https://placeimg.com/640/480/any",
             "width": 640,
