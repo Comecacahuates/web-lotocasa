@@ -26,7 +26,7 @@ export default function (props: NavbarProps) {
 
   /* Renderización */
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" sticky="top">
       <Container>
         {/* Logo */}
         <Navbar.Brand>Lonas, Toldos y Carpas</Navbar.Brand>
