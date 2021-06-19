@@ -1,5 +1,5 @@
 import * as React from "react";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import NavDropdown, { NavDropdownProps } from "react-bootstrap/NavDropdown";
 
 /**
  * Componente de elemento desplegable de la barra de navegación
@@ -7,7 +7,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
  * @param {NavDropdown.NavDropdownProps} Propiedades
  * @returns Componente
  */
-export default function NavbarDropdown(props: NavDropdown.NavDropdownProps) {
+export default function NavbarDropdown(props: NavDropdownProps) {
   /* Propiedades */
   const children: React.ReactNode = props.children;
 
