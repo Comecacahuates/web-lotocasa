@@ -6,6 +6,7 @@
     {
       "type": "carousel",
       "height": "600px",
+      "wide": true,
       "items": [
         {
           "image": {

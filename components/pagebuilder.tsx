@@ -1,4 +1,7 @@
 import * as React from "react";
+import Head from "next/head";
+import Layout from "../components/layout";
+import PageTitle from "../components/pagetitle";
 import Carousel from "../components/carousel";
 import TextSection from "../components/textsection";
 import CustomersSection from "../components/customerssection";
@@ -24,7 +27,12 @@ export default function PageBuilder(props: PageBuilder) {
 
   /* Renderización */
   return (
-    <React.Fragment>
+    <Layout pageTitle={content.title} route={content.route}>
+      <Head>
+        <title>{content.title}</title>
+      </Head>
+      {/* Título */}
+      {displayTitle ? <PageTitle title={content.title} /> : ""}
       {/* Secciones */}
       {sections.map((section: any, index: number) => {
         if (section.type === "carousel") {
@@ -37,6 +45,6 @@ export default function PageBuilder(props: PageBuilder) {
           return <CustomersSection key={index} content={section} />;
         }
       })}
-    </React.Fragment>
+    </Layout>
   );
 }

@@ -1,6 +1,4 @@
-import Head from "next/head";
-import Image from "next/image";
-import Layout from "../components/layout";
+import * as React from "react";
 import PageBuilder from "../components/pagebuilder";
 
 import content from "../content/index.json";
@@ -10,14 +8,6 @@ import content from "../content/index.json";
  * @returns Componente
  */
 export default function Home() {
-  /* Contenido */
-
-  return (
-    <Layout pageTitle="Inicio" route="/">
-      <Head>
-        <title>{content.title}</title>
-      </Head>
-      <PageBuilder content={content} />
-    </Layout>
-  );
+  /* Renderización */
+  return <PageBuilder content={content} />;
 }
