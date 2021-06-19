@@ -1,5 +1,6 @@
 import * as React from "react";
 import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 
 /**
  * Propiedades del componente de formato de las páginas
@@ -24,6 +25,7 @@ export default function Layout(props: LayoutProps) {
     <div>
       <Navbar activeItem={route} />
       {children}
+      <Footer />
     </div>
   );
 }
