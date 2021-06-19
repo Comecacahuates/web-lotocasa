@@ -3,6 +3,7 @@ import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import SectionTitle from "../components/sectiontitle";
 
 /**
  * Propiedades del componente de sección de clientes
@@ -29,7 +30,7 @@ export default function CustomersSection(props: CustomersSectionProps) {
       <Row className="hx-5 py-5 justify-content-evenly">
         <Col xs={12} className="py-2">
           {/* Título */}
-          <h2 className="display-5 my-3">{title}</h2>
+          <SectionTitle title={title} />
         </Col>
         {/* Lista de clientes */}
         {customersList.map((customer: any, index: number) => (

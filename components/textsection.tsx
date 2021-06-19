@@ -2,6 +2,7 @@ import * as React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import SectionTitle from "../components/sectiontitle";
 
 /**
  * Propiedades del componente de sección de texto
@@ -29,7 +30,7 @@ export default function TextSection(props: TextSectionProps) {
       <Row className="gx-5 py-5">
         <Col xs={12} className="py-2">
           {/* Título */}
-          <h2 className="display-5 my-3">{title}</h2>
+          <SectionTitle title={title} />
           {/* Párrafos */}
           {paragraphs.map((paragraph: string, index: number) => (
             <p key={index} className="lead">
