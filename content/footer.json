@@ -1,0 +1,55 @@
+[
+  {
+    "title": "Carpas industriales",
+    "link": "/CarpasIndustriales",
+    "subitems": [
+      {
+        "title": "Áreas de trabajo",
+        "link": "/CarpasIndustriales#AreasDeTrabajo"
+      },
+      {
+        "title": "Almacenes",
+        "link": "/CarpasIndustriales#Almacenes"
+      }
+    ]
+  },
+  {
+    "title": "Carpas para eventos",
+    "link": "/CarpasParaEventos",
+    "subitems": [
+      {
+        "title": "Eventos sociales",
+        "link": "/CarpasParaEventos#EventosSociales"
+      },
+      {
+        "title": "Eventos empresariales",
+        "link": "/CarpasParaEventos#EventosEmpresariales"
+      },
+      {
+        "title": "Eventos comerciales y exposiciones",
+        "link": "/CarpasParaEventos#EventosComercialesYExposiciones"
+      }
+    ]
+  },
+  {
+    "title": "Contacto",
+    "link": "/Contacto",
+    "subitems": [
+      {
+        "title": "55 5769 2994",
+        "icon": "telephone-fill",
+        "link": "tel:5557692994"
+      },
+      {
+        "title": "lonastoldosycarpas@gmail.com",
+        "icon": "envelope-fill",
+        "link": "mailto:lonastoldosycarpas@gmail.com"
+      },
+      {
+        "title": "WhatsApp",
+        "icon": "whatsapp",
+        "link": "https://api.whatsapp.com/send?phone=+5215540311943"
+      }
+    ]
+  }
+]
