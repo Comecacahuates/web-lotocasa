@@ -4,6 +4,7 @@ import Image from "next/image";
 import { css } from "@emotion/react";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
+import Icon from "../components/icon";
 
 /**
  * Propiedades del componente de carrusel
@@ -45,7 +46,7 @@ export default function (props: CarouselProps) {
             <h1 className="display-3">{item.title}</h1>
             <p className="h4">{item.caption}</p>
             <Button href={item.button.link} variant="outline-light">
-              {item.button.label} <i className="bi bi-chevron-right"></i>
+              {item.button.label} <Icon icon="chevron-right" />
             </Button>
           </Carousel.Caption>
         </Carousel.Item>
