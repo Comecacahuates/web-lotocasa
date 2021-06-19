@@ -24,7 +24,7 @@ export default function MapSection(props: MapSectionProps) {
   /* Renderización */
   return (
     <React.Fragment>
-      <h3 className="mb-3">{title}</h3>
+      <h3 className="mb-3 ps-4">{title}</h3>
       <Map src={src} height={height} />
     </React.Fragment>
   );
