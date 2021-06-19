@@ -42,13 +42,17 @@ export default function (props: CarouselProps) {
             objectPosition="50% 50%"
           />
           {/* Título y pie */}
-          <Carousel.Caption>
-            <h1 className="display-3">{item.title}</h1>
-            <p className="h4">{item.caption}</p>
-            <Button href={item.button.link} variant="outline-light">
-              {item.button.label} <Icon icon="chevron-right" />
-            </Button>
-          </Carousel.Caption>
+          {item.caption !== undefined ? (
+            <Carousel.Caption>
+              <h1 className="display-3">{item.caption.title}</h1>
+              <p className="h4">{item.caption.text}</p>
+              <Button href={item.caption.button.link} variant="outline-light">
+                {item.caption.button.label} <Icon icon="chevron-right" />
+              </Button>
+            </Carousel.Caption>
+          ) : (
+            ""
+          )}
         </Carousel.Item>
       ))}
     </Carousel>

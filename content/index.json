@@ -8,29 +8,34 @@
       "height": "600px",
       "items": [
         {
-          "title": "Carpas industriales",
-          "caption": "Obtén un nuevo espacio de almacenamiento o área de trabajo que se adapte a tus necesidades de tamaño, iluminación y diseño.",
           "image": {
             "src": "https://placeimg.com/640/480/any",
             "width": 640,
             "height": 480
           },
-          "button": {
-            "label": "Conocer más",
-            "link": "/CarpasIndustriales"
+          "caption": {
+            "title": "Carpas industriales",
+            "text": "Obtén un nuevo espacio de almacenamiento o área de trabajo que se adapte a tus necesidades de tamaño, iluminación y diseño.",
+            "button": {
+              "label": "Conocer más",
+              "link": "/CarpasIndustriales"
+            }
           }
         },
         {
-          "title": "Carpas para eventos",
-          "caption": "Agrega a tu fecha especial el toque de elegancia y profesionalismo que soñaste para sorprender a tus clientes o colaboradores.",
           "image": {
             "src": "https://placeimg.com/640/480/any",
             "width": 640,
             "height": 480
           },
-          "button": {
-            "label": "Conocer más",
-            "link": "/CarpasParaEventos"
+
+          "caption": {
+            "title": "Carpas para eventos",
+            "text": "Agrega a tu fecha especial el toque de elegancia y profesionalismo que soñaste para sorprender a tus clientes o colaboradores.",
+            "button": {
+              "label": "Conocer más",
+              "link": "/CarpasParaEventos"
+            }
           }
         }
       ]
