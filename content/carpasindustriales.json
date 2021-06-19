@@ -1,0 +1,67 @@
+{
+  "route": "/CarpasIndustriales",
+  "title": "Carpas industriales",
+  "displayTitle": true,
+  "sections": [
+    {
+      "type": "text",
+      "title": "Áreas de trabajo",
+      "id": "AreasDeTrabajo",
+      "texts": [
+        "Espacios de trabajo temporales para tus colaboradores, trabajos fuera de tu empresa o para expandir tus propias instalaciones.",
+        "Diferentes diseños de carpas con un perímetro de cortinas enrollables, iluminación perfecta y lona antirreflejante para mantener una temperatura ideal para tus actividades."
+      ],
+      "subsections": []
+    },
+    {
+      "type": "carousel",
+      "height": "600px",
+      "items": [
+        {
+          "image": {
+            "src": "https://placeimg.com/640/480/any",
+            "width": 640,
+            "height": 480
+          }
+        },
+        {
+          "image": {
+            "src": "https://placeimg.com/640/480/any",
+            "width": 640,
+            "height": 480
+          }
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Almacenes",
+      "id": "Almacenes",
+      "texts": [
+        "Incrementa tu espacio de almacenamiento para tus mercancías o materias primas de forma temporal o definitiva en tus instalaciones.",
+        "Espacios de tamaños personalizados para tus necesidades operativas con una iluminación que te permitirá trabajar cómodamente."
+      ],
+      "subsections": []
+    },
+    {
+      "type": "carousel",
+      "height": "600px",
+      "items": [
+        {
+          "image": {
+            "src": "https://placeimg.com/640/480/any",
+            "width": 640,
+            "height": 480
+          }
+        },
+        {
+          "image": {
+            "src": "https://placeimg.com/640/480/any",
+            "width": 640,
+            "height": 480
+          }
+        }
+      ]
+    }
+  ]
+}
