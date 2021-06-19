@@ -26,16 +26,14 @@ export default function Footer() {
                 {/* Subelementos de la columna */}
                 {item.subitems.map((subitem: any, index: number) => (
                   <li className="my-2">
-                    <a href={subitem.link}>
-                      {subitem.icon !== undefined ? (
-                        <React.Fragment>
-                          <Icon icon={subitem.icon} />{" "}
-                        </React.Fragment>
-                      ) : (
-                        ""
-                      )}
-                      {subitem.title}
-                    </a>
+                    {subitem.icon !== undefined ? (
+                      <React.Fragment>
+                        <Icon icon={subitem.icon} /> {"\u00A0\u00A0"}
+                      </React.Fragment>
+                    ) : (
+                      ""
+                    )}
+                    <a href={subitem.link}>{subitem.title}</a>
                   </li>
                 ))}
               </ul>

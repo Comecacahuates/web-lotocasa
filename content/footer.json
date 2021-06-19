@@ -41,14 +41,19 @@
         "link": "tel:5557692994"
       },
       {
+        "title": "55 5769 2668",
+        "icon": "telephone-fill",
+        "link": "tel:5557692668"
+      },
+      {
+        "title": "55 4031 1943",
+        "icon": "whatsapp",
+        "link": "https://api.whatsapp.com/send?phone=+5215540311943"
+      },
+      {
         "title": "lonastoldosycarpas@gmail.com",
         "icon": "envelope-fill",
         "link": "mailto:lonastoldosycarpas@gmail.com"
-      },
-      {
-        "title": "WhatsApp",
-        "icon": "whatsapp",
-        "link": "https://api.whatsapp.com/send?phone=+5215540311943"
       }
     ]
   }
