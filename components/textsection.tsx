@@ -23,12 +23,13 @@ export default function TextSection(props: TextSectionProps) {
   /* Propiedades */
   const content: any = props.content;
   const title: string = content.title;
+  const id: string = content.id || "";
   const texts: string[] = content.texts;
   const subsections: any = content.subsections;
 
   /* Renderización */
   return (
-    <Container>
+    <Container id={id}>
       <Row className="gx-5 py-5">
         <Col lg={12} className="py-2">
           {/* Título */}
