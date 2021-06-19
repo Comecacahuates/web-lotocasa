@@ -10,7 +10,11 @@
         {
           "title": "Carpas industriales",
           "caption": "Obtén un nuevo espacio de almacenamiento o área de trabajo que se adapte a tus necesidades de tamaño, iluminación y diseño.",
-          "imageUrl": "https://placeimg.com/640/480/any",
+          "image": {
+            "src": "https://placeimg.com/640/480/any",
+            "width": 640,
+            "height": 480
+          },
           "button": {
             "label": "Conocer más",
             "link": "/CarpasIndustriales"
@@ -19,7 +23,11 @@
         {
           "title": "Carpas para eventos",
           "caption": "Agrega a tu fecha especial el toque de elegancia y profesionalismo que soñaste para sorprender a tus clientes o colaboradores.",
-          "imageUrl": "https://placeimg.com/640/480/any",
+          "image": {
+            "src": "https://placeimg.com/640/480/any",
+            "width": 640,
+            "height": 480
+          },
           "button": {
             "label": "Conocer más",
             "link": "/CarpasParaEventos"
@@ -35,30 +43,58 @@
         {
           "title": "Misión",
           "caption": "Acondicionar cualquier espacio para que nuestros clientes puedan disponer de él con la comodidad que requieren para llevar a cabo su evento o proyecto, así como brindarles una atención y servicio de calidad para satisfacer sus necesidades.",
-          "imageUrl": "https://placeimg.com/640/480/any"
+          "image": {
+            "src": "https://placeimg.com/640/480/any",
+            "width": 640,
+            "height": 480
+          }
         },
         {
           "title": "Visión",
           "caption": "Convertirnos en una empresa reconocida por el profesionalismo y excelencia del servicios que ofrecemos para proporcionar a nuestros clientes experiencias que constantemente superen sus expectativas.",
-          "imageUrl": "https://placeimg.com/640/480/any"
+          "image": {
+            "src": "https://placeimg.com/640/480/any",
+            "width": 640,
+            "height": 480
+          }
         }
       ]
     },
     {
       "type": "customers",
       "title": "Nuestros clientes",
-      "list": [
+      "customersList": [
         {
           "name": "Nombre",
-          "imageUrl": "https://placeimg.com/100/100/any"
+          "image": {
+            "src": "https://placeimg.com/100/100/any",
+            "width": 100,
+            "height": 100
+          }
         },
         {
           "name": "Nombre",
-          "imageUrl": "https://placeimg.com/100/100/any"
+          "image": {
+            "src": "https://placeimg.com/100/100/any",
+            "width": 100,
+            "height": 100
+          }
         },
         {
           "name": "Nombre",
-          "imageUrl": "https://placeimg.com/100/100/any"
+          "image": {
+            "src": "https://placeimg.com/100/100/any",
+            "width": 100,
+            "height": 100
+          }
+        },
+        {
+          "name": "Nombre",
+          "image": {
+            "src": "https://placeimg.com/100/100/any",
+            "width": 100,
+            "height": 100
+          }
         }
       ]
     }

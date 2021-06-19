@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import * as React from "react";
-import { css, jsx } from "@emotion/react";
+import Image from "next/image";
+import { css } from "@emotion/react";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 
@@ -25,13 +26,19 @@ export default function (props: CarouselProps) {
   return (
     <Carousel>
       {carousel.items.map((item: any, index: number) => (
-        <Carousel.Item key={index}>
+        <Carousel.Item
+          key={index}
+          css={css`
+            height: ${carousel.height};
+          `}
+        >
           {/* Imagen */}
-          <div
-            css={css`
-              background-image: url(${item.imageUrl});
-              height: ${carousel.height};
-            `}
+          <Image
+            src={item.image.src}
+            className={`d-block w-100`}
+            layout="fill"
+            objectFit="cover"
+            objectPosition="50% 50%"
           />
           {/* Título y pie */}
           <Carousel.Caption>

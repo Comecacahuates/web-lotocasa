@@ -1,4 +1,5 @@
 import * as React from "react";
+import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -33,7 +34,12 @@ export default function CustomersSection(props: CustomersSectionProps) {
         {/* Lista de clientes */}
         {customersList.map((customer: any, index: number) => (
           <Col key={index} xs={12} md={6} lg={3} className="text-center py-2">
-            <img src={customer.imageUrl} alt={customer.name} />
+            <Image
+              src={customer.image.src}
+              alt={customer.name}
+              width={customer.image.width}
+              height={customer.image.height}
+            />
           </Col>
         ))}
       </Row>
