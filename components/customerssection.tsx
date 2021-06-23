@@ -1,49 +1,34 @@
 import * as React from "react";
-import Image from "next/image";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import SectionTitle from "../components/sectiontitle";
+import SectionContainer from "./ui/sectioncontainer";
+import Image from "./ui/image";
+import { CustomersSection, Customer } from "../@types/pagestructure";
 
-/**
- * Propiedades del componente de sección de clientes
- */
+/** Propiedades del componente de sección de clientes */
 export interface CustomersSectionProps {
-  /* Contenido */
-  content: any;
+  customersSection: CustomersSection;
 }
 
-/**
- * Componente de sección de clientes
- * @param {CustomersSectionProps} props Propiedades
- * @returns Componente
- */
-export default function CustomersSection(props: CustomersSectionProps) {
+/** Componente de sección de clientes */
+export default function CustomersSectionUI(props: CustomersSectionProps) {
   /* Propiedades */
-  const content: any = props.content;
-  const title: string = content.title;
-  const customersList: any = content.customersList;
+  const customersSection: CustomersSection = props.customersSection;
+  const title: string | undefined = customersSection.title;
+  const list: Customer[] = customersSection.customersList;
 
   /* Renderización */
   return (
-    <Container>
-      <Row className="hx-5 py-5 justify-content-evenly">
-        <Col xs={12} className="py-2">
-          {/* Título */}
-          <SectionTitle title={title} />
-        </Col>
-        {/* Lista de clientes */}
-        {customersList.map((customer: any, index: number) => (
-          <Col key={index} xs={12} md={6} lg={3} className="text-center py-2">
-            <Image
-              src={customer.image.src}
-              alt={customer.name}
-              width={customer.image.width}
-              height={customer.image.height}
-            />
+    <SectionContainer title={title}>
+      {/* Lista de clientes */}
+      <Row className="gx-5 py-3 justify-content-evenly" xs={1} md={2} lg={4}>
+        {list.map((item: Customer, index: number) => (
+          <Col key={index} className="text-center py-2">
+            <Image imageFigureContent={item.image} />
           </Col>
         ))}
       </Row>
-    </Container>
+    </SectionContainer>
   );
 }
