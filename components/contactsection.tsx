@@ -1,6 +1,6 @@
 import * as React from "react";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import SectionContainer from "./ui/sectioncontainer";
 import SubsectionCol from "./ui/subsectioncol";
 import ListItem from "./ui/listitem";
 import {
@@ -29,8 +29,20 @@ export default function ContactSectionUI(props: ContactSectionProps) {
 
   /* Renderización */
   return (
-    <Container>
-      <Row className="gx-5 py-5" sm={1} md={2} lg={3}>
+    <SectionContainer>
+      <Row className="gx-5 py-3" xs={1} md={2} lg={3}>
+        {/* Medios de contacto */}
+        <SubsectionCol title={meansOfContactSection.title}>
+          <ul className="list-unstyled text-small">
+            {meansOfContactSection.meansOfContact.map(
+              (item: MeanOfContact, index: number) => (
+                <ListItem key={index} href={item.url} icon={item.icon}>
+                  {item.name}
+                </ListItem>
+              )
+            )}
+          </ul>
+        </SubsectionCol>
         {/* Dirección */}
         <SubsectionCol title={addressSection.title}>
           <p>{addressSection.address}</p>
@@ -46,19 +58,7 @@ export default function ContactSectionUI(props: ContactSectionProps) {
             )
           )}
         </SubsectionCol>
-        {/* Medios de contacto */}
-        <SubsectionCol title={meansOfContactSection.title}>
-          <ul className="list-unstyled text-small">
-            {meansOfContactSection.meansOfContact.map(
-              (item: MeanOfContact, index: number) => (
-                <ListItem key={index} href={item.url} icon={item.icon}>
-                  {item.name}
-                </ListItem>
-              )
-            )}
-          </ul>
-        </SubsectionCol>
       </Row>
-    </Container>
+    </SectionContainer>
   );
 }
