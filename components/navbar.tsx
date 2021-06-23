@@ -3,22 +3,17 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
+import { NavbarItem } from "../@types/pagestructure";
 
 import navbarItems from "../content/navbar.json";
 
-/**
- * Propiedades del componente de la barra de navegación
- */
+/** Propiedades del componente de la barra de navegación */
 export interface NavbarProps {
   /* Elemento activo */
   activeItem: string;
 }
 
-/**
- * Componente de la barra de navegación
- * @param {NavbarProps} props Propiedades
- * @returns Componente
- */
+/** Componente de la barra de navegación */
 export default function (props: NavbarProps) {
   /* Propiedades */
   const activeItem: string = props.activeItem;
@@ -34,17 +29,17 @@ export default function (props: NavbarProps) {
         {/* Elementos de la barra de navegación */}
         <Navbar.Collapse>
           <Nav className="ms-auto" activeKey={activeItem}>
-            {navbarItems.map((navbarItem: any, index: number) =>
-              navbarItem.isDropdown ? (
+            {navbarItems.map((navbarItem: NavbarItem, index: number) =>
+              navbarItem.subitems !== undefined ? (
                 <NavDropdown
                   key={index}
                   title={navbarItem.title}
-                  id={navbarItem.id}
+                  id={navbarItem.id || ""}
                   autoClose={true}
-                  active={navbarItem.route === activeItem}
+                  active={navbarItem.link === activeItem}
                 >
                   {navbarItem.subitems.map((subitem: any, index: number) => (
-                    <NavDropdown.Item key={index} href={subitem.route}>
+                    <NavDropdown.Item key={index} href={subitem.link}>
                       {subitem.title}
                     </NavDropdown.Item>
                   ))}
@@ -52,8 +47,8 @@ export default function (props: NavbarProps) {
               ) : (
                 <Nav.Link
                   key={index}
-                  href={navbarItem.route}
-                  active={navbarItem.route === activeItem}
+                  href={navbarItem.link}
+                  active={navbarItem.link === activeItem}
                 >
                   {navbarItem.title}
                 </Nav.Link>
