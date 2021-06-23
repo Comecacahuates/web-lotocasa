@@ -1,7 +1,7 @@
 import * as React from "react";
 import Head from "next/head";
-import Container from "react-bootstrap/Container";
 import Layout from "./layout";
+import SectionContainer from "./ui/sectioncontainer";
 import Title from "./ui/title";
 import CarouselSectionUI from "./carouselsection";
 import TextSectionUI from "./textsection";
@@ -41,9 +41,9 @@ export default function PageBuilder(props: PageBuilderProps) {
         <title>{title}</title>
       </Head>
       {/* Título */}
-      <Container>
+      <SectionContainer>
         {displayTitle ? <Title level={1}>{title}</Title> : ""}
-      </Container>
+      </SectionContainer>
       {/* Secciones */}
       {sectionsContent.map((section: Section, index: number) => {
         /* Sección de carrusel */

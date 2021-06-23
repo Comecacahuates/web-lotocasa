@@ -19,7 +19,7 @@ export default function SectionContainer(props: SectionContainerProps) {
   /* Renderización */
   return (
     <Container id={id} className="py-3 overflow-hidden" fluid="md">
-      <Title level={2}>{title}</Title>
+      {title ? <Title level={2}>{title}</Title> : ""}
       {children}
     </Container>
   );
