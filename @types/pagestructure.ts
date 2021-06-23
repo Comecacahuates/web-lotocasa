@@ -139,3 +139,14 @@ export type ButtonLink = {
   label: string;
   link: string;
 };
+
+/** Elemento de la barra de navegación */
+export type NavbarItem = {
+  id?: string;
+  title: string;
+  link?: string;
+  subitems?: FooterItem[];
+};
+
+/** Elemento del pie de página */
+export type FooterItem = NavbarItem;
