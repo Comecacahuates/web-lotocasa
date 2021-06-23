@@ -2,40 +2,41 @@ import * as React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Icon from "../components/icon";
+import ListItem from "./ui/listitem";
+import { FooterItem } from "../@types/pagestructure";
 
 import footerItems from "../content/footer.json";
 
-/**
- * Componente de pie de página
- * @returns Componente
- */
+/* * Componente de pie de página */
 export default function Footer() {
   /* Renderización */
   return (
     <footer>
       <Container>
-        <Row className="gx-5 py-5">
+        <Row className="gx-5 py-5" xs={1} md={2} lg={3}>
           {/* Columnas del pie de página */}
-          {footerItems.map((item: any, index: number) => (
-            <Col md={6} lg={4}>
+          {footerItems.map((item: FooterItem, index: number) => (
+            <Col key={index}>
               <h5 className="py-3">
-                <a href={item.link}>{item.title}</a>
+                {item.link !== undefined ? (
+                  <a href={item.link}>{item.title}</a>
+                ) : (
+                  item.title
+                )}
               </h5>
               <ul className="list-unstyled text-small">
                 {/* Subelementos de la columna */}
-                {item.subitems.map((subitem: any, index: number) => (
-                  <li className="my-2">
-                    {subitem.icon !== undefined ? (
-                      <React.Fragment>
-                        <Icon icon={subitem.icon} /> {"\u00A0\u00A0"}
-                      </React.Fragment>
-                    ) : (
-                      ""
-                    )}
-                    <a href={subitem.link}>{subitem.title}</a>
-                  </li>
-                ))}
+                {item.subitems !== undefined
+                  ? item.subitems.map((subitem: any, index: number) => (
+                      <ListItem
+                        key={index}
+                        href={subitem.link}
+                        icon={subitem.icon}
+                      >
+                        {subitem.title}
+                      </ListItem>
+                    ))
+                  : ""}
               </ul>
             </Col>
           ))}
