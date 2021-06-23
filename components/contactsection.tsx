@@ -1,54 +1,63 @@
 import * as React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import MeansOfContact from "../components/meansofcontactsection";
-import Address from "../components/address";
-import OpeningHours from "../components/openinghours";
-import MapSection from "../components/mapsection";
+import SubsectionCol from "./ui/subsectioncol";
+import ListItem from "./ui/listitem";
+import {
+  ContactSection,
+  MeansOfContactSection,
+  MeanOfContact,
+  AddressSection,
+  OpeningHoursSection,
+  OpeningHours,
+} from "../@types/pagestructure";
 
-/**
- * Propiedades del componente de sección de contacto
- */
+/** Propiedades del componente de sección de contacto */
 export interface ContactSectionProps {
-  /* Contenido */
-  content: any;
+  contactSection: ContactSection;
 }
 
-/**
- * Componente de sección de contacto
- * @param {ContactSectionProps} props Propiedades
- * @returns Componente
- */
-export default function ContactSection(props: ContactSectionProps) {
+/** Componente de sección de contacto */
+export default function ContactSectionUI(props: ContactSectionProps) {
   /* Propiedades */
-  const content: any = props.content;
-  const meansOfContact: any = content.meansOfContact;
-  const address: any = content.address;
-  const openingHours: any = content.openingHours;
-  const map: any = content.map;
+  const contactSection: ContactSection = props.contactSection;
+  const meansOfContactSection: MeansOfContactSection =
+    contactSection.meansOfContactSection;
+  const addressSection: AddressSection = contactSection.addressSection;
+  const openingHoursSection: OpeningHoursSection =
+    contactSection.openingHoursSection;
 
   /* Renderización */
   return (
     <Container>
-      <Row className="gx-5 py-5">
+      <Row className="gx-5 py-5" sm={1} md={2} lg={3}>
         {/* Dirección */}
-        <Col sm={12} md={6} lg={4} className="py-2">
-          <Address content={address} />
-        </Col>
+        <SubsectionCol title={addressSection.title}>
+          <p>{addressSection.address}</p>
+        </SubsectionCol>
         {/* Horario de atención */}
-        <Col sm={12} md={6} lg={4} className="py-2">
-          <OpeningHours content={openingHours} />
-        </Col>
+        <SubsectionCol title={openingHoursSection.title}>
+          {openingHoursSection.openingHours.map(
+            (item: OpeningHours, index: number) => (
+              <React.Fragment key={index}>
+                <dt>{item.days}</dt>
+                <dd>{item.hours}</dd>
+              </React.Fragment>
+            )
+          )}
+        </SubsectionCol>
         {/* Medios de contacto */}
-        <Col sm={12} md={6} lg={4} className="py-2">
-          <MeansOfContact content={meansOfContact} />
-        </Col>
-
-        {/* Mapa */}
-        <Col sm={12} className="px-0 py-2">
-          <MapSection content={map} />
-        </Col>
+        <SubsectionCol title={meansOfContactSection.title}>
+          <ul className="list-unstyled text-small">
+            {meansOfContactSection.meansOfContact.map(
+              (item: MeanOfContact, index: number) => (
+                <ListItem key={index} href={item.url} icon={item.icon}>
+                  {item.name}
+                </ListItem>
+              )
+            )}
+          </ul>
+        </SubsectionCol>
       </Row>
     </Container>
   );

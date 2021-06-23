@@ -1,31 +1,31 @@
 import * as React from "react";
-import Map from "../components/map";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Map from "./ui/map";
+import SectionContainer from "./ui/sectioncontainer";
+import { MapSection } from "../@types/pagestructure";
 
-/**
- * Propiedades del coponente de sección de mapa
- */
+/** Propiedades del coponente de sección de mapa  */
 export interface MapSectionProps {
-  /* Contenido */
-  content: any;
+  mapSection: MapSection;
 }
 
-/**
- * Componente de sección de mapa
- * @param {MapSectionProps} props Propiedades
- * @returns Componente
- */
-export default function MapSection(props: MapSectionProps) {
+/** Componente de sección de mapa */
+export default function MapSectionUI(props: MapSectionProps) {
   /* Propiedades */
-  const content: any = props.content;
-  const title: string = content.title;
-  const src: string = content.src;
-  const height: string = content.height;
+  const mapSection: MapSection = props.mapSection;
+  const title: string = mapSection.title;
+  const src: string = mapSection.src;
+  const height: string = mapSection.height;
 
   /* Renderización */
   return (
-    <React.Fragment>
-      <h3 className="mb-3 ps-4">{title}</h3>
-      <Map src={src} height={height} />
-    </React.Fragment>
+    <SectionContainer title={title}>
+      <Row className="px-0 py-3">
+        <Col className="px-0">
+          <Map src={src} height={height} />
+        </Col>
+      </Row>
+    </SectionContainer>
   );
 }
