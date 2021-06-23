@@ -1,13 +1,11 @@
 import * as React from "react";
 import PageBuilder from "../components/pagebuilder";
+import { Page } from "../@types/utils";
 
-import content from "../content/index.json";
+import page from "../content/index.json";
 
-/**
- * Componente de la página de inicio
- * @returns Componente
- */
+/** Componente de la página de inicio */
 export default function Home() {
   /* Renderización */
-  return <PageBuilder content={content} />;
+  return <PageBuilder page={page as Page} />;
 }

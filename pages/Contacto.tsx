@@ -1,13 +1,11 @@
 import * as React from "react";
 import PageBuilder from "../components/pagebuilder";
+import { Page } from "../@types/pagestructure";
 
-import content from "../content/contacto.json";
+import page from "../content/contacto.json";
 
-/**
- * Componente de la página de contacto
- * @returns Componente
- */
+/** Componente de la página de contacto */
 export default function Contacto() {
   /* Renderización */
-  return <PageBuilder content={content} />;
+  return <PageBuilder page={page as Page} />;
 }

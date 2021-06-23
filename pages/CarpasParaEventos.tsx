@@ -1,13 +1,11 @@
 import * as React from "react";
 import PageBuilder from "../components/pagebuilder";
+import { Page } from "../@types/pagestructure";
 
-import content from "../content/carpasparaeventos.json";
+import page from "../content/carpasparaeventos.json";
 
-/**
- * Componente de la página de carpas para eventos
- * @returns Componente
- */
+/** Componente de la página de carpas para eventos */
 export default function CarpasParaEventos() {
   /* Renderización */
-  return <PageBuilder content={content} />;
+  return <PageBuilder page={page as Page} />;
 }
