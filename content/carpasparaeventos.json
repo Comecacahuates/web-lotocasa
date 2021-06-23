@@ -4,91 +4,136 @@
   "displayTitle": true,
   "sections": [
     {
-      "type": "text",
+      "sectionType": "textSection",
       "title": "Eventos sociales",
       "id": "EventosSociales",
       "texts": [
-        "Tus invitados quedarán fascinados con nuestras carpas de diseños espectaculares e increíbles decoraciones en tus eventos, así como la gran atención a los detalles por parte de nuestro equipo."
+        "Tenemos a tu disposición una gran variedad de carpas para múltiples tipos de eventos"
       ],
-      "subsections": []
+      "subsections": [
+        {
+          "sectionType": "textSection",
+          "title": "Eventos sociales",
+          "texts": [
+            "Tus invitados quedarán fascinados con nuestras carpas de diseños espectaculares e increíbles decoraciones en tus eventos, así como la gran atención a los detalles por parte de nuestro equipo."
+          ]
+        },
+        {
+          "sectionType": "textSection",
+          "title": "Eventos empresariales",
+          "texts": [
+            "Con nuestra amplia experiencia en el mercado y excelente servicio, tendrás espacios ideales para ejecutar tus juntas, capacitaciones y eventos corporativos con la atención personalizada de nuestro equipo."
+          ]
+        },
+        {
+          "sectionType": "textSection",
+          "title": "Eventos comerciales y exposiciones",
+          "texts": [
+            "Ofrece una experiencia memorable para tus clientes, expositores y asistentes con nuestra experiencia en la planeación y organización de eventos masivos y nuestra variedad de carpas para diferentes necesidades."
+          ]
+        }
+      ]
     },
     {
-      "type": "carousel",
-      "height": "600px",
+      "sectionType": "catalogueSection",
+      "title": "Catálogo",
       "items": [
         {
+          "caption": {
+            "title": "Carpas a dos aguas",
+            "text": "Ideal para eventos en espacios verdes y jardines"
+          },
           "image": {
-            "src": "https://placeimg.com/640/480/any",
-            "width": 640,
-            "height": 480
+            "figureType": "imageFigure",
+            "src": "https://placeimg.com/500/350/any",
+            "alt": "",
+            "cover": false,
+            "width": 300,
+            "height": 250
           }
         },
         {
+          "caption": {
+            "title": "Carpas de domo",
+            "text": "Hermoso diseño de media luna en versión cristal que permite a los invitados distrutar de los espacios exteriores"
+          },
           "image": {
-            "src": "https://placeimg.com/640/480/any",
-            "width": 640,
-            "height": 480
+            "figureType": "imageFigure",
+            "src": "https://placeimg.com/500/350/any",
+            "alt": "",
+            "cover": false,
+            "width": 300,
+            "height": 250
+          }
+        },
+        {
+          "caption": {
+            "title": "Carpas cónicas",
+            "text": "Elegante carpa ideal para celebrar ceremonias con gran comodidad para tus invitados"
+          },
+          "image": {
+            "figureType": "imageFigure",
+            "src": "https://placeimg.com/500/350/any",
+            "alt": "",
+            "cover": false,
+            "width": 300,
+            "height": 250
+          }
+        },
+        {
+          "caption": {
+            "title": "Carpas de estrella",
+            "text": "Una de nuestras piezas más elegantes, con un diseño increíble que encantará a tus invitados"
+          },
+          "image": {
+            "figureType": "imageFigure",
+            "src": "https://placeimg.com/500/350/any",
+            "alt": "",
+            "cover": false,
+            "width": 300,
+            "height": 250
+          }
+        },
+        {
+          "caption": {
+            "title": "Carpas árabes",
+            "text": "Dale a tu evento una aspecto elegante y clásico con el color blanco"
+          },
+          "image": {
+            "figureType": "imageFigure",
+            "src": "https://placeimg.com/500/350/any",
+            "alt": "",
+            "cover": false,
+            "width": 300,
+            "height": 250
           }
         }
       ]
     },
     {
-      "type": "text",
-      "title": "Eventos empresariales",
-      "id": "EventosEmpresariales",
-      "texts": [
-        "Con nuestra amplia experiencia en el mercado y excelente servicio, tendrás espacios ideales para ejecutar tus juntas, capacitaciones y eventos corporativos con la atención personalizada de nuestro equipo."
-      ],
-      "subsections": []
-    },
-    {
-      "type": "carousel",
-      "height": "600px",
-      "items": [
-        {
-          "image": {
-            "src": "https://placeimg.com/640/480/any",
-            "width": 640,
-            "height": 480
+      "sectionType": "carouselSection",
+      "title": "Galería",
+      "carousel": {
+        "height": "600px",
+        "items": [
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "https://placeimg.com/640/480/any",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "https://placeimg.com/640/480/any",
+              "alt": "",
+              "cover": true
+            }
           }
-        },
-        {
-          "image": {
-            "src": "https://placeimg.com/640/480/any",
-            "width": 640,
-            "height": 480
-          }
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "title": "Eventos comerciales y exposiciones",
-      "id": "EventosComercialesYExposiciones",
-      "texts": [
-        "Ofrece una experiencia memorable para tus clientes, expositores y asistentes con nuestra experiencia en la planeación y organización de eventos masivos y nuestra variedad de carpas para diferentes necesidades."
-      ],
-      "subsections": []
-    },
-    {
-      "type": "carousel",
-      "height": "600px",
-      "items": [
-        {
-          "image": {
-            "src": "https://placeimg.com/640/480/any",
-            "width": 640,
-            "height": 480
-          }
-        },
-        {
-          "image": {
-            "src": "https://placeimg.com/640/480/any",
-            "width": 640,
-            "height": 480
-          }
-        }
-      ]
+        ]
+      }
     }
   ]
 }

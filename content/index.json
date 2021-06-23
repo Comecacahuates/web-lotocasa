@@ -4,59 +4,69 @@
   "displayTitle": false,
   "sections": [
     {
-      "type": "carousel",
-      "height": "600px",
+      "sectionType": "carouselSection",
       "wide": true,
-      "items": [
-        {
-          "image": {
-            "src": "https://placeimg.com/640/480/any",
-            "width": 640,
-            "height": 480
+      "carousel": {
+        "figureType": "carouselFigure",
+        "height": "600px",
+        "items": [
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "https://placeimg.com/640/480/any",
+              "alt": "",
+              "cover": true
+            },
+            "caption": {
+              "title": "Carpas industriales",
+              "text": "Obtén un nuevo espacio de almacenamiento o área de trabajo que se adapte a tus necesidades de tamaño, iluminación y diseño.",
+              "button": {
+                "label": "Conocer más",
+                "link": "/CarpasIndustriales"
+              }
+            }
           },
-          "caption": {
-            "title": "Carpas industriales",
-            "text": "Obtén un nuevo espacio de almacenamiento o área de trabajo que se adapte a tus necesidades de tamaño, iluminación y diseño.",
-            "button": {
-              "label": "Conocer más",
-              "link": "/CarpasIndustriales"
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "https://placeimg.com/640/480/any",
+              "alt": "",
+              "cover": true
+            },
+            "caption": {
+              "title": "Carpas para eventos",
+              "text": "Agrega a tu fecha especial el toque de elegancia y profesionalismo que soñaste para sorprender a tus clientes o colaboradores.",
+              "button": {
+                "label": "Conocer más",
+                "link": "/CarpasParaEventos"
+              }
             }
           }
-        },
-        {
-          "image": {
-            "src": "https://placeimg.com/640/480/any",
-            "width": 640,
-            "height": 480
-          },
-
-          "caption": {
-            "title": "Carpas para eventos",
-            "text": "Agrega a tu fecha especial el toque de elegancia y profesionalismo que soñaste para sorprender a tus clientes o colaboradores.",
-            "button": {
-              "label": "Conocer más",
-              "link": "/CarpasParaEventos"
-            }
-          }
-        }
-      ]
+        ]
+      }
     },
     {
-      "type": "text",
-      "title": "Nuestros servicios",
+      "sectionType": "textSection",
+      "title": "Servicios",
       "texts": ["Nuestros servicios son..."],
       "subsections": [
         {
+          "sectionType": "textSection",
           "title": "Carpas industriales",
-          "text": "Obtén un nuevo espacio de almacenamiento o área de trabajo que se adapte a tus necesidades de tamaño, iluminación y diseño.",
+          "texts": [
+            "Obtén un nuevo espacio de almacenamiento o área de trabajo que se adapte a tus necesidades de tamaño, iluminación y diseño."
+          ],
           "button": {
             "label": "Conocer más",
             "link": "/CarpasIndustriales"
           }
         },
         {
+          "sectionType": "textSection",
           "title": "Carpas para eventos",
-          "text": "Agrega a tu fecha especial el toque de elegancia y profesionalismo que soñaste para sorprender a tus clientes o colaboradores.",
+          "texts": [
+            "Agrega a tu fecha especial el toque de elegancia y profesionalismo que soñaste para sorprender a tus clientes o colaboradores."
+          ],
           "button": {
             "label": "Conocer más",
             "link": "/CarpasParaEventos"
@@ -65,62 +75,70 @@
       ]
     },
     {
-      "type": "text",
+      "sectionType": "textSection",
       "title": "Acerca de nosotros",
       "texts": ["Somos una empresa..."],
       "subsections": [
         {
+          "sectionType": "textSection",
           "title": "Misión",
-          "text": "Acondicionar cualquier espacio para que nuestros clientes puedan disponer de él con la comodidad que requieren para llevar a cabo su evento o proyecto, así como brindarles una atención y servicio de calidad para satisfacer sus necesidades.",
-          "image": {
-            "src": "https://placeimg.com/640/480/any",
-            "width": 640,
-            "height": 480
-          }
+          "texts": [
+            "Acondicionar cualquier espacio para que nuestros clientes puedan disponer de él con la comodidad que requieren para llevar a cabo su evento o proyecto, así como brindarles una atención y servicio de calidad para satisfacer sus necesidades."
+          ]
         },
         {
+          "sectionType": "textSection",
           "title": "Visión",
-          "text": "Convertirnos en una empresa reconocida por el profesionalismo y excelencia del servicios que ofrecemos para proporcionar a nuestros clientes experiencias que constantemente superen sus expectativas.",
-          "image": {
-            "src": "https://placeimg.com/640/480/any",
-            "width": 640,
-            "height": 480
-          }
+          "texts": [
+            "Convertirnos en una empresa reconocida por el profesionalismo y excelencia del servicios que ofrecemos para proporcionar a nuestros clientes experiencias que constantemente superen sus expectativas."
+          ]
         }
       ]
     },
     {
-      "type": "customers",
+      "sectionType": "customersSection",
       "title": "Nuestros clientes",
       "customersList": [
         {
-          "name": "Nombre",
+          "name": "Cliente",
           "image": {
+            "figureType": "imageFigure",
             "src": "https://placeimg.com/100/100/any",
+            "alt": "",
+            "cover": false,
             "width": 100,
             "height": 100
           }
         },
         {
-          "name": "Nombre",
+          "name": "Cliente",
           "image": {
+            "figureType": "imageFigure",
             "src": "https://placeimg.com/100/100/any",
+            "alt": "",
+            "cover": false,
             "width": 100,
             "height": 100
           }
         },
         {
-          "name": "Nombre",
+          "name": "Cliente",
           "image": {
+            "figureType": "imageFigure",
             "src": "https://placeimg.com/100/100/any",
+            "alt": "",
+            "cover": false,
             "width": 100,
             "height": 100
           }
         },
         {
-          "name": "Nombre",
+          "name": "Cliente",
           "image": {
+            "figureType": "imageFigure",
             "src": "https://placeimg.com/100/100/any",
+            "alt": "",
+            "cover": false,
             "width": 100,
             "height": 100
           }

@@ -4,64 +4,90 @@
   "displayTitle": true,
   "sections": [
     {
-      "type": "text",
+      "sectionType": "textSection",
       "title": "Áreas de trabajo",
       "id": "AreasDeTrabajo",
       "texts": [
         "Espacios de trabajo temporales para tus colaboradores, trabajos fuera de tu empresa o para expandir tus propias instalaciones.",
         "Diferentes diseños de carpas con un perímetro de cortinas enrollables, iluminación perfecta y lona antirreflejante para mantener una temperatura ideal para tus actividades."
       ],
-      "subsections": []
+      "subsections": [
+        {
+          "sectionType": "textSection",
+          "title": "Áreas de trabajo",
+          "texts": [
+            "Espacios de trabajo temporales para tus colaboradores, trabajos fuera de tu empresa o para expandir tus propias instalaciones.",
+            "Diferentes diseños de carpas con un perímetro de cortinas enrollables, iluminación perfecta y lona antirreflejante para mantener una temperatura ideal para tus actividades."
+          ]
+        },
+        {
+          "sectionType": "textSection",
+          "title": "Almacenes",
+          "texts": [
+            "Incrementa tu espacio de almacenamiento para tus mercancías o materias primas de forma temporal o definitiva en tus instalaciones.",
+            "Espacios de tamaños personalizados para tus necesidades operativas con una iluminación que te permitirá trabajar cómodamente."
+          ]
+        }
+      ]
     },
     {
-      "type": "carousel",
-      "height": "600px",
+      "sectionType": "catalogueSection",
+      "title": "Catálogo",
       "items": [
         {
+          "caption": {
+            "title": "Carpas a dos aguas",
+            "text": "Obtén un área de gran tamaño para espacios grandes"
+          },
           "image": {
-            "src": "https://placeimg.com/640/480/any",
-            "width": 640,
-            "height": 480
+            "figureType": "imageFigure",
+            "src": "https://placeimg.com/500/350/any",
+            "alt": "",
+            "cover": false,
+            "width": 300,
+            "height": 250
           }
         },
         {
+          "caption": {
+            "title": "Carpas de domo",
+            "text": "Ideal para espacios de venta, almacenamiento y administración de eventos"
+          },
           "image": {
-            "src": "https://placeimg.com/640/480/any",
-            "width": 640,
-            "height": 480
+            "figureType": "imageFigure",
+            "src": "https://placeimg.com/500/350/any",
+            "alt": "",
+            "cover": false,
+            "width": 300,
+            "height": 250
           }
         }
       ]
     },
     {
-      "type": "text",
-      "title": "Almacenes",
-      "id": "Almacenes",
-      "texts": [
-        "Incrementa tu espacio de almacenamiento para tus mercancías o materias primas de forma temporal o definitiva en tus instalaciones.",
-        "Espacios de tamaños personalizados para tus necesidades operativas con una iluminación que te permitirá trabajar cómodamente."
-      ],
-      "subsections": []
-    },
-    {
-      "type": "carousel",
-      "height": "600px",
-      "items": [
-        {
-          "image": {
-            "src": "https://placeimg.com/640/480/any",
-            "width": 640,
-            "height": 480
+      "sectionType": "carouselSection",
+      "title": "Galería",
+      "carousel": {
+        "height": "600px",
+        "items": [
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "https://placeimg.com/640/480/any",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "https://placeimg.com/640/480/any",
+              "alt": "",
+              "cover": true
+            }
           }
-        },
-        {
-          "image": {
-            "src": "https://placeimg.com/640/480/any",
-            "width": 640,
-            "height": 480
-          }
-        }
-      ]
+        ]
+      }
     }
   ]
 }
