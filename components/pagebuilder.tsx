@@ -1,52 +1,100 @@
 import * as React from "react";
 import Head from "next/head";
-import Layout from "../components/layout";
-import PageTitle from "../components/pagetitle";
-import Carousel from "../components/carousel";
-import TextSection from "../components/textsection";
-import CustomersSection from "../components/customerssection";
-import ContactSection from "../components/contactsection";
+import Container from "react-bootstrap/Container";
+import Layout from "./layout";
+import Title from "./ui/title";
+import CarouselSectionUI from "./carouselsection";
+import TextSectionUI from "./textsection";
+import CatalogueSectionUI from "./cataloguesection";
+import CustomersSectionUI from "./customerssection";
+import ContactSectionUI from "./contactsection";
+import MapSectionUI from "./mapsection";
+import {
+  Page,
+  Section,
+  CarouselSection,
+  TextSection,
+  CatalogueSection,
+  CustomersSection,
+  ContactSection,
+  MapSection,
+} from "../@types/pagestructure";
 
-/**
- * Propiedades del componente de contrucción de página
- */
-export interface PageBuilder {
-  /* Contenido */
-  content: any;
+/** Propiedades del componente de contrucción de página */
+export interface PageBuilderProps {
+  page: Page;
 }
 
-/**
- * Componente de construcción de página
- * @param {PageBuilderProps} props Propiedades
- * @return Componente
- */
-export default function PageBuilder(props: PageBuilder) {
+/** Componente de construcción de página */
+export default function PageBuilder(props: PageBuilderProps) {
   /* Propiedades */
-  const content: any = props.content;
-  const displayTitle: boolean = content.displayTitle || false;
-  const sections: any = content.sections;
+  const page: Page = props.page;
+  const route: string = page.route;
+  const title: string = page.title;
+  const displayTitle: boolean = page.displayTitle || false;
+  const sectionsContent: Section[] = page.sections;
 
   /* Renderización */
   return (
-    <Layout pageTitle={content.title} route={content.route}>
+    <Layout pageTitle={title} route={route}>
       <Head>
-        <title>{content.title}</title>
+        <title>{title}</title>
       </Head>
       {/* Título */}
-      {displayTitle ? <PageTitle title={content.title} /> : ""}
+      <Container>
+        {displayTitle ? <Title level={1}>{title}</Title> : ""}
+      </Container>
       {/* Secciones */}
-      {sections.map((section: any, index: number) => {
-        if (section.type === "carousel") {
-          return <Carousel key={index} carousel={section} />;
+      {sectionsContent.map((section: Section, index: number) => {
+        /* Sección de carrusel */
+        if (section.sectionType === "carouselSection") {
+          return (
+            <CarouselSectionUI
+              key={index}
+              carouselSection={section as CarouselSection}
+            />
+          );
         }
-        if (section.type === "text") {
-          return <TextSection key={index} content={section} />;
+        /* Sección de texto */
+        if (section.sectionType === "textSection") {
+          return (
+            <TextSectionUI key={index} textSection={section as TextSection} />
+          );
         }
-        if (section.type === "customers") {
-          return <CustomersSection key={index} content={section} />;
+        /* Sección de catálogo */
+        if (section.sectionType === "catalogueSection") {
+          return (
+            <CatalogueSectionUI
+              key={index}
+              catalogueSection={section as CatalogueSection}
+            />
+          );
         }
-        if (section.type === "contact") {
-          return <ContactSection key={index} content={section} />;
+        /* Sección de clientes */
+        if (section.sectionType === "customersSection") {
+          return (
+            <CustomersSectionUI
+              key={index}
+              customersSection={section as CustomersSection}
+            />
+          );
+        }
+        /* Sección de contacto */
+        if (section.sectionType === "contactSection") {
+          return (
+            <ContactSectionUI
+              key={index}
+              contactSection={section as ContactSection}
+            />
+          );
+        }
+        {
+          /* Sección de mapa */
+        }
+        if (section.sectionType === "mapSection") {
+          return (
+            <MapSectionUI key={index} mapSection={section as MapSection} />
+          );
         }
       })}
     </Layout>

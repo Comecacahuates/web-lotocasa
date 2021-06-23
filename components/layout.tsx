@@ -1,6 +1,6 @@
 import * as React from "react";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import Navbar from "./navbar";
+import Footer from "./footer";
 
 /**
  * Propiedades del componente de formato de las páginas
