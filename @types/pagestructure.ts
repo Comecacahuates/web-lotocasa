@@ -137,7 +137,7 @@ export type Caption = {
 /** Botón de enlace */
 export type ButtonLink = {
   label: string;
-  link: string;
+  href: string;
 };
 
 /** Elemento de la barra de navegación */

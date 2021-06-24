@@ -1,7 +1,7 @@
 import * as React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
+import ButtonLink from "./ui/buttonlink";
 import SectionContainer from "./ui/sectioncontainer";
 import SubsectionCol from "./ui/subsectioncol";
 import Icon from "./ui/icon";
@@ -44,9 +44,9 @@ export default function TextSectionUI(props: TextSectionProps) {
               </p>
             ))}
             {subsection.button !== undefined ? (
-              <Button href={subsection.button.link} variant="outline-dark">
-                {subsection.button.label} <Icon icon="chevron-right" />
-              </Button>
+              <ButtonLink href={subsection.button.href} dark={true}>
+                {subsection.button.label}
+              </ButtonLink>
             ) : (
               ""
             )}

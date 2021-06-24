@@ -1,24 +1,26 @@
 import * as React from "react";
 import Button from "react-bootstrap/Button";
 import Icon from "./icon";
-import { ButtonLinkContent } from "../../@types/utils";
+import { ButtonLink } from "../../@types/pagestructure";
 
 /** Propiedades */
 export interface ButtonLinkProps {
-  buttonLinkContent: ButtonLinkContent;
+  href: string;
+  children: string;
+  dark?: boolean;
 }
 
 /** Componente de botón de enlace */
-export default function (props: ButtonLinkProps) {
+export default function ButtonLinkUI(props: ButtonLinkProps) {
   /* Propiedades */
-  const buttonLinkContent: ButtonLinkContent = props.buttonLinkContent;
-  const label: string = buttonLinkContent.label;
-  const link: string = buttonLinkContent.link;
+  const href: string = props.href;
+  const variant: "light" | "dark" = props.dark ? "dark" : "light";
+  const children: string = props.children;
 
   /* Renderización */
   return (
-    <Button href={link} variant="outline-light">
-      {label} <Icon icon="chevron-right" />
+    <Button href={href} variant={`outline-${variant}`}>
+      {children} <Icon icon="chevron-right" />
     </Button>
   );
 }

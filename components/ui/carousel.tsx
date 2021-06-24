@@ -4,7 +4,7 @@ import { css } from "@emotion/react";
 import Carousel from "react-bootstrap/Carousel";
 import Image from "./image";
 import ButtonLink from "./buttonlink";
-import { CarouselFigure, CarouselItem } from "../@types/pagestructure";
+import { CarouselFigure, CarouselItem } from "../../@types/pagestructure";
 
 /** Propiedades del componente de carrusel */
 export interface CarouselProps {
@@ -29,14 +29,16 @@ export default function CarouselUI(props: CarouselProps) {
           `}
         >
           {/* Imagen */}
-          <Image imageFigureContent={item.image} />
+          <Image imageFigure={item.image} />
           {/* Título y pie */}
           {item.caption !== undefined ? (
             <Carousel.Caption>
               <h1 className="display-3">{item.caption.title}</h1>
               <p className="h4">{item.caption.text}</p>
               {item.caption.button !== undefined ? (
-                <ButtonLink buttonLinkContent={item.caption.button} />
+                <ButtonLink href={item.caption.button.href}>
+                  {item.caption.button.label}
+                </ButtonLink>
               ) : (
                 ""
               )}
