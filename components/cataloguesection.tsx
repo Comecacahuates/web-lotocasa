@@ -20,7 +20,7 @@ export default function CatalogueSectionUI(props: CatalogueSectionProps) {
   /* Renderización */
   return (
     <SectionContainer title={title}>
-      <Row xs={1} md={2} xl={3} className="py-3">
+      <Row xs={1} md={2} xl={3} className="py-3 gx-4 gy-2">
         {items.map((item: CatalogueItem, index: number) => (
           <Col key={index}>
             <CatalogueItemUI key={index} catalogueItem={item} />

@@ -39,6 +39,9 @@ export default function PageBuilder(props: PageBuilderProps) {
     <Layout pageTitle={title} route={route}>
       <Head>
         <title>{title}</title>
+        <meta charSet="UTF-8" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       {/* Título */}
       {displayTitle ? (
@@ -92,9 +95,7 @@ export default function PageBuilder(props: PageBuilderProps) {
             />
           );
         }
-        {
-          /* Sección de mapa */
-        }
+        /* Sección de mapa */
         if (section.sectionType === "mapSection") {
           return (
             <MapSectionUI key={index} mapSection={section as MapSection} />
