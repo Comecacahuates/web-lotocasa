@@ -2,18 +2,17 @@
 import * as React from "react";
 import { css } from "@emotion/react";
 import Image from "next/image";
-import { ImageFigureContent } from "../@types/utils";
+import { ImageFigure } from "../../@types/pagestructure";
 
 /** Propiedades del componente */
 export interface ImageProps {
-  imageFigureContent: ImageFigureContent;
+  imageFigure: ImageFigure;
 }
 
 /** Componente de imagen */
-export default function (props: ImageProps) {
+export default function ImageUI(props: ImageProps) {
   /* Propiedades */
-  const { src, alt, cover, width, height }: ImageFigureContent =
-    props.imageFigureContent;
+  const { src, alt, cover, width, height }: ImageFigure = props.imageFigure;
 
   /* Renderización */
   if (cover) {

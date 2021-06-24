@@ -25,7 +25,7 @@ export default function CustomersSectionUI(props: CustomersSectionProps) {
       <Row className="gx-5 py-3 justify-content-evenly" xs={1} md={2} lg={4}>
         {list.map((item: Customer, index: number) => (
           <Col key={index} className="text-center py-2">
-            <Image imageFigureContent={item.image} />
+            <Image imageFigure={item.image} />
           </Col>
         ))}
       </Row>
