@@ -1,6 +1,6 @@
 import * as React from "react";
 import PageBuilder from "../components/pagebuilder";
-import { Page } from "../@types/utils";
+import { Page } from "../@types/pagestructure";
 
 import page from "../content/index.json";
 
