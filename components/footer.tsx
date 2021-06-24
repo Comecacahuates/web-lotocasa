@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ListItem from "./ui/listitem";
 import { FooterItem } from "../@types/pagestructure";
+import styles from "./footer.module.scss";
 
 import footerItems from "../content/footer.json";
 
@@ -11,7 +12,7 @@ import footerItems from "../content/footer.json";
 export default function Footer() {
   /* Renderización */
   return (
-    <footer>
+    <footer className={`mt-5 overflow-hidden ${styles.footer}`}>
       <Container>
         <Row className="gx-5 py-5" xs={1} md={2} lg={3}>
           {/* Columnas del pie de página */}

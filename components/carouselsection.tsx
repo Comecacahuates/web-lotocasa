@@ -17,7 +17,7 @@ export default function CarouselSectionUI(props: CarouselSectionProps) {
   const carouselSection: CarouselSection = props.carouselSection;
   const title: string | undefined = carouselSection.title;
   const carousel: CarouselFigure = carouselSection.carousel;
-  const fluid: "lg" | boolean = carouselSection.wide ? true : "lg";
+  const fluid: "lg" | boolean = carouselSection.fluid ? true : "lg";
 
   /* Renderización */
   const carouselComponent: React.ReactNode = <Carousel carousel={carousel} />;
