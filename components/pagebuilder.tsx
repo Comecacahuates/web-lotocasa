@@ -41,9 +41,13 @@ export default function PageBuilder(props: PageBuilderProps) {
         <title>{title}</title>
       </Head>
       {/* Título */}
-      <SectionContainer>
-        {displayTitle ? <Title level={1}>{title}</Title> : ""}
-      </SectionContainer>
+      {displayTitle ? (
+        <SectionContainer>
+          <Title level={1}>{title}</Title>
+        </SectionContainer>
+      ) : (
+        ""
+      )}
       {/* Secciones */}
       {sectionsContent.map((section: Section, index: number) => {
         /* Sección de carrusel */
