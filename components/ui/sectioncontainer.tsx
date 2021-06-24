@@ -31,7 +31,9 @@ export default function SectionContainer(props: SectionContainerProps) {
       )}
       <Container
         id={id}
-        className={`py-3 overflow-hidden ${styles.container}`}
+        className={`py-3 overflow-hidden ${styles.container} ${
+          backgroundImage ? "text-light" : ""
+        }`}
         fluid="md"
       >
         {title ? <Title level={2}>{title}</Title> : ""}
