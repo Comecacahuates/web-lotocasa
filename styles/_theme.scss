@@ -1,0 +1,13 @@
+// Colores
+$yellow: #fdcb0c;
+$yellow-dark: shade-color($yellow, 30%);
+$yellow-light: tint-color($yellow, 30%);
+
+// Colores del tema
+$primary: $yellow;
+
+// Color del fondo
+$body-bg: #eee;
+
+// Enlaces
+$link-color: $yellow-dark;

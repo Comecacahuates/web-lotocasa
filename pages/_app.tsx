@@ -1,8 +1,7 @@
-import "bootstrap/dist/css/bootstrap.css";
+import "../styles/custom.scss";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import type { AppProps } from "next/app";
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
 }
-export default MyApp;
