@@ -1,6 +1,12 @@
 {
   "route": "/CarpasParaEventos",
   "title": "Carpas para eventos",
+  "titleBackgroundImage": {
+    "figureType": "imageFigure",
+    "src": "/images/carpas-eventos/dos-aguas-1.jpg",
+    "alt": "Carpa a dos aguas",
+    "cover": true
+  },
   "displayTitle": true,
   "sections": [
     {

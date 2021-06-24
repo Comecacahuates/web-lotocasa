@@ -45,7 +45,7 @@ export default function PageBuilder(props: PageBuilderProps) {
       </Head>
       {/* Título */}
       {displayTitle ? (
-        <SectionContainer>
+        <SectionContainer backgroundImage={page.titleBackgroundImage}>
           <Title level={1}>{title}</Title>
         </SectionContainer>
       ) : (

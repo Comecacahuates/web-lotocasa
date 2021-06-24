@@ -1,6 +1,12 @@
 {
   "route": "/CarpasIndustriales",
   "title": "Carpas industriales",
+  "titleBackgroundImage": {
+    "figureType": "imageFigure",
+    "src": "/images/carpas-industriales/domo-0.jpg",
+    "alt": "Carpa de domo",
+    "cover": true
+  },
   "displayTitle": true,
   "sections": [
     {

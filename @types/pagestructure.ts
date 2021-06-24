@@ -2,6 +2,7 @@
 export type Page = {
   route: string;
   title: string;
+  titleBackgroundImage?: ImageFigure;
   displayTitle: boolean;
   sections: Section[];
 };
