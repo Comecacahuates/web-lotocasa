@@ -5,6 +5,7 @@ import Carousel from "react-bootstrap/Carousel";
 import Image from "./image";
 import ButtonLink from "./buttonlink";
 import { CarouselFigure, CarouselItem } from "../../@types/pagestructure";
+import styles from "./carousel.module.scss";
 
 /** Propiedades del componente de carrusel */
 export interface CarouselProps {
@@ -15,7 +16,7 @@ export interface CarouselProps {
 export default function CarouselUI(props: CarouselProps) {
   /* Propiedades */
   const carousel: CarouselFigure = props.carousel;
-  const height: string = carousel.height;
+  const wide: boolean = carousel.wide;
   const items: CarouselItem[] = carousel.items;
 
   /* Renderización */
@@ -24,9 +25,7 @@ export default function CarouselUI(props: CarouselProps) {
       {items.map((item: CarouselItem, index: number) => (
         <Carousel.Item
           key={index}
-          css={css`
-            height: ${height};
-          `}
+          className={wide ? styles.carouselitemwide : styles.carouselitem}
         >
           {/* Imagen */}
           <Image imageFigure={item.image} />

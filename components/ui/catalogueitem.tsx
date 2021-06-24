@@ -23,7 +23,7 @@ export default function (props: CatalogueItemProps) {
 
   /* Renderización */
   return (
-    <Card className="mb-5">
+    <Card className="mb-3">
       <Card.Img variant="top" as={Image} imageFigure={image} />
       <Card.Body>
         <Card.Title>{caption.title}</Card.Title>

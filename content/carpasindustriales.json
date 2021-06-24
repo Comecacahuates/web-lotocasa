@@ -64,7 +64,7 @@
       "sectionType": "carouselSection",
       "title": "Galería",
       "carousel": {
-        "height": "600px",
+        "wide": true,
         "items": [
           {
             "image": {

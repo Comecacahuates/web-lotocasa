@@ -5,11 +5,22 @@
   "sections": [
     {
       "sectionType": "carouselSection",
-      "wide": true,
+      "fluid": true,
       "carousel": {
         "figureType": "carouselFigure",
-        "height": "600px",
+        "wide": false,
         "items": [
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-eventos/dos-aguas-0.jpg",
+              "alt": "Carpa a dos aguas",
+              "cover": true
+            },
+            "caption": {
+              "title": "Cubrimos tus necesidades"
+            }
+          },
           {
             "image": {
               "figureType": "imageFigure",

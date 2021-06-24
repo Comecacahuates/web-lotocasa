@@ -25,7 +25,7 @@ export type TextSection = Section & {
 export type CarouselSection = Section & {
   sectionType: "carouselSection";
   carousel: CarouselFigure;
-  wide: boolean;
+  fluid: boolean;
 };
 
 /** Sección de clientes */
@@ -111,7 +111,7 @@ export type ImageFigure = Figure & {
 /** Figura de carrusel */
 export type CarouselFigure = Figure & {
   figureType: "carouselFigure";
-  height: string;
+  wide: boolean;
   items: CarouselItem[];
 };
 
