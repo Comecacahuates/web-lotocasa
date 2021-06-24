@@ -3,9 +3,9 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
-import { NavbarItem } from "../@types/pagestructure";
+import { Navbar as NavbarStruct, NavbarItem } from "../@types/pagestructure";
 
-import navbarItems from "../content/navbar.json";
+import navbar from "../content/navbar.json";
 
 /** Propiedades del componente de la barra de navegación */
 export interface NavbarProps {
@@ -14,31 +14,40 @@ export interface NavbarProps {
 }
 
 /** Componente de la barra de navegación */
-export default function (props: NavbarProps) {
+export default function NavbarUI(props: NavbarProps) {
   /* Propiedades */
   const activeItem: string = props.activeItem;
 
   /* Renderización */
   return (
-    <Navbar bg="light" expand="lg" sticky="top">
+    <Navbar bg="primary" variant="light" expand="lg" sticky="top">
       <Container>
         {/* Logo */}
-        <Navbar.Brand>Lonas, Toldos y Carpas</Navbar.Brand>
+        <Navbar.Brand>
+          <img
+            src={navbar.logo.src}
+            alt={navbar.logo.alt}
+            width={navbar.logo.width}
+            height={navbar.logo.width}
+            className="d-inline-block align-middle"
+          />{" "}
+          Lonas, Toldos y Carpas
+        </Navbar.Brand>
         {/* Botón de barra de navegación responsiva */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         {/* Elementos de la barra de navegación */}
         <Navbar.Collapse>
           <Nav className="ms-auto" activeKey={activeItem}>
-            {navbarItems.map((navbarItem: NavbarItem, index: number) =>
-              navbarItem.subitems !== undefined ? (
+            {navbar.items.map((item: NavbarItem, index: number) =>
+              item.subitems !== undefined ? (
                 <NavDropdown
                   key={index}
-                  title={navbarItem.title}
-                  id={navbarItem.id || ""}
+                  title={item.title}
+                  id={item.id || ""}
                   autoClose={true}
-                  active={navbarItem.link === activeItem}
+                  active={item.link === activeItem}
                 >
-                  {navbarItem.subitems.map((subitem: any, index: number) => (
+                  {item.subitems.map((subitem: any, index: number) => (
                     <NavDropdown.Item key={index} href={subitem.link}>
                       {subitem.title}
                     </NavDropdown.Item>
@@ -47,10 +56,10 @@ export default function (props: NavbarProps) {
               ) : (
                 <Nav.Link
                   key={index}
-                  href={navbarItem.link}
-                  active={navbarItem.link === activeItem}
+                  href={item.link}
+                  active={item.link === activeItem}
                 >
-                  {navbarItem.title}
+                  {item.title}
                 </Nav.Link>
               )
             )}

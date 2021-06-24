@@ -1,20 +1,30 @@
-[
-  {
-    "title": "Inicio",
-    "link": "/"
+{
+  "logo": {
+    "figureType": "imageFigure",
+    "src": "/images/logo.png",
+    "alt": "Lotocasa",
+    "cover": false,
+    "width": 50,
+    "height": 50
   },
-  {
-    "id": "CarpasIndustrialesNavbarItem",
-    "title": "Carpas industriales",
-    "link": "/CarpasIndustriales"
-  },
-  {
-    "id": "CarpasParaEventosNavbarItem",
-    "title": "Carpas para eventos",
-    "link": "/CarpasParaEventos"
-  },
-  {
-    "title": "Contacto",
-    "link": "/Contacto"
-  }
-]
+  "items": [
+    {
+      "title": "Inicio",
+      "link": "/"
+    },
+    {
+      "id": "CarpasIndustrialesNavbarItem",
+      "title": "Carpas industriales",
+      "link": "/CarpasIndustriales"
+    },
+    {
+      "id": "CarpasParaEventosNavbarItem",
+      "title": "Carpas para eventos",
+      "link": "/CarpasParaEventos"
+    },
+    {
+      "title": "Contacto",
+      "link": "/Contacto"
+    }
+  ]
+}

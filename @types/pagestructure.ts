@@ -140,6 +140,12 @@ export type ButtonLink = {
   href: string;
 };
 
+/** Barra de navegación */
+export type Navbar = {
+  logo: ImageFigure;
+  items: NavbarItem[];
+};
+
 /** Elemento de la barra de navegación */
 export type NavbarItem = {
   id?: string;
