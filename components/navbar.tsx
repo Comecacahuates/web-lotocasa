@@ -24,14 +24,16 @@ export default function NavbarUI(props: NavbarProps) {
       <Container>
         {/* Logo */}
         <Navbar.Brand>
-          <img
-            src={navbar.logo.src}
-            alt={navbar.logo.alt}
-            width={navbar.logo.width}
-            height={navbar.logo.width}
-            className="d-inline-block align-middle"
-          />{" "}
-          Lonas, Toldos y Carpas
+          <a href="/" className="text-decoration-none text-dark">
+            <img
+              src={navbar.logo.src}
+              alt={navbar.logo.alt}
+              width={navbar.logo.width}
+              height={navbar.logo.width}
+              className="d-inline-block align-middle"
+            />{" "}
+            Lonas, Toldos y Carpas
+          </a>
         </Navbar.Brand>
         {/* Botón de barra de navegación responsiva */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
