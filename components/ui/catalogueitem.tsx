@@ -1,7 +1,6 @@
 import * as React from "react";
 import Card from "react-bootstrap/Card";
 import Image from "./image";
-import ButtonLink from "./buttonlink";
 import {
   CatalogueItem,
   ImageFigure,
@@ -25,15 +24,10 @@ export default function (props: CatalogueItemProps) {
   /* Renderización */
   return (
     <Card className="mb-5">
-      <Card.Img variant="top" as={Image} imageFigureContent={image} />
+      <Card.Img variant="top" as={Image} imageFigure={image} />
       <Card.Body>
         <Card.Title>{caption.title}</Card.Title>
         <Card.Text>{caption.text}</Card.Text>
-        {caption.button !== undefined ? (
-          <ButtonLink buttonLinkContent={caption.button} />
-        ) : (
-          ""
-        )}
       </Card.Body>
     </Card>
   );

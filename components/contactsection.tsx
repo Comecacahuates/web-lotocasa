@@ -30,7 +30,7 @@ export default function ContactSectionUI(props: ContactSectionProps) {
   /* Renderización */
   return (
     <SectionContainer>
-      <Row className="gx-5 py-3" xs={1} md={2} lg={3}>
+      <Row className="gx-5 py-3" xs={1} sm={2} lg={3}>
         {/* Medios de contacto */}
         <SubsectionCol title={meansOfContactSection.title}>
           <ul className="list-unstyled text-small">

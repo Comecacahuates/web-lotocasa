@@ -22,7 +22,7 @@ export default function CatalogueSectionUI(props: CatalogueSectionProps) {
     <SectionContainer title={title}>
       <Row xs={1} md={2} xl={3} className="py-3">
         {items.map((item: CatalogueItem, index: number) => (
-          <Col>
+          <Col key={index}>
             <CatalogueItemUI key={index} catalogueItem={item} />
           </Col>
         ))}
