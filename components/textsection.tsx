@@ -4,7 +4,6 @@ import Col from "react-bootstrap/Col";
 import ButtonLink from "./ui/buttonlink";
 import SectionContainer from "./ui/sectioncontainer";
 import SubsectionCol from "./ui/subsectioncol";
-import Icon from "./ui/icon";
 import { TextSection } from "../@types/pagestructure";
 
 /** Propiedades del componente de sección de texto */
@@ -44,9 +43,11 @@ export default function TextSectionUI(props: TextSectionProps) {
               </p>
             ))}
             {subsection.button !== undefined ? (
-              <ButtonLink href={subsection.button.href} dark={true}>
-                {subsection.button.label}
-              </ButtonLink>
+              <p>
+                <ButtonLink href={subsection.button.href}>
+                  {subsection.button.label}
+                </ButtonLink>
+              </p>
             ) : (
               ""
             )}
