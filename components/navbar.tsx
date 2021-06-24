@@ -28,7 +28,6 @@ export default function NavbarUI(props: NavbarProps) {
             <img
               src={navbar.logo.src}
               alt={navbar.logo.alt}
-              width={navbar.logo.width}
               height={navbar.logo.width}
               className="d-inline-block align-middle"
             />{" "}
