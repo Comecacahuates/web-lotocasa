@@ -16,6 +16,7 @@ export type Section = {
 /** Sección de texto */
 export type TextSection = Section & {
   sectionType: "textSection";
+  backgroundImage?: ImageFigure;
   id?: string;
   texts: string[];
   button?: ButtonLink;

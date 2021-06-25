@@ -57,28 +57,79 @@
     {
       "sectionType": "textSection",
       "title": "Servicios",
-      "texts": ["Nuestros servicios son..."],
+      "texts": ["Nuestros servicios son..."]
+    },
+    {
+      "sectionType": "textSection",
+      "backgroundImage": {
+        "figureType": "imageFigure",
+        "src": "/images/carpas-industriales/domo-0.jpg",
+        "alt": "Carpa a dos aguas",
+        "cover": true
+      },
+      "title": "Carpas industriales",
+      "texts": [
+        "Obtén un nuevo espacio de almacenamiento o área de trabajo que se adapte a tus necesidades de tamaño, iluminación y diseño."
+      ],
       "subsections": [
         {
           "sectionType": "textSection",
-          "title": "Carpas industriales",
-          "texts": [
-            "Obtén un nuevo espacio de almacenamiento o área de trabajo que se adapte a tus necesidades de tamaño, iluminación y diseño."
-          ],
+          "title": "Áreas de trabajo",
+          "texts": ["Texto de carpas de áreas de trabajo..."],
           "button": {
             "label": "Conocer más",
-            "href": "/CarpasIndustriales"
+            "href": "/CarpasParaAreasDeTrabajo"
           }
         },
         {
           "sectionType": "textSection",
-          "title": "Carpas para eventos",
-          "texts": [
-            "Agrega a tu fecha especial el toque de elegancia y profesionalismo que soñaste para sorprender a tus clientes o colaboradores."
-          ],
+          "title": "Almacenes",
+          "texts": ["Texto de carpas de almacenes..."],
           "button": {
             "label": "Conocer más",
-            "href": "/CarpasParaEventos"
+            "href": "/CarpasParaAlmacenes"
+          }
+        }
+      ]
+    },
+    {
+      "sectionType": "textSection",
+      "backgroundImage": {
+        "figureType": "imageFigure",
+        "src": "/images/carpas-eventos/dos-aguas-1.jpg",
+        "alt": "Carpa a dos aguas",
+        "cover": true
+      },
+      "title": "Carpas para eventos",
+      "texts": [
+        "Agrega a tu fecha especial el toque de elegancia y profesionalismo que soñaste para sorprender a tus clientes o colaboradores."
+      ],
+      "subsections": [
+        {
+          "sectionType": "textSection",
+          "title": "Evento sociales",
+          "texts": ["Texto de carpas de eventos sociales..."],
+          "button": {
+            "label": "Conocer más",
+            "href": "/CarpasParaEventosSociales"
+          }
+        },
+        {
+          "sectionType": "textSection",
+          "title": "Eventos empresariales",
+          "texts": ["Texto de carpas de eventos empresariales..."],
+          "button": {
+            "label": "Conocer más",
+            "href": "/CarpasParaEventosEmpresariales"
+          }
+        },
+        {
+          "sectionType": "textSection",
+          "title": "Eventos comerciales y exposiciones",
+          "texts": ["Texto de carpas de eventos comerciales y exposiciones..."],
+          "button": {
+            "label": "Conocer más",
+            "href": "/CarpasParaEventosComercialesYExposiciones"
           }
         }
       ]

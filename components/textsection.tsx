@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import ButtonLink from "./ui/buttonlink";
 import SectionContainer from "./ui/sectioncontainer";
 import SubsectionCol from "./ui/subsectioncol";
-import { TextSection } from "../@types/pagestructure";
+import { TextSection, ImageFigure } from "../@types/pagestructure";
 
 /** Propiedades del componente de sección de texto */
 export interface TextSectionProps {
@@ -15,6 +15,7 @@ export interface TextSectionProps {
 export default function TextSectionUI(props: TextSectionProps) {
   /* Propiedades */
   const textSection: TextSection = props.textSection;
+  const backgroundImage: ImageFigure | undefined = textSection.backgroundImage;
   const title: string | undefined = textSection.title;
   const id: string = textSection.id || "";
   const texts: string[] = textSection.texts;
@@ -22,17 +23,21 @@ export default function TextSectionUI(props: TextSectionProps) {
 
   /* Renderización */
   return (
-    <SectionContainer title={title} id={id}>
-      <Row className="gx-5 py-3">
-        <Col lg={12} className="py-2">
-          {/* Párrafos de texto */}
-          {texts.map((text: string, index: number) => (
-            <p key={index} className="lead">
-              {text}
-            </p>
-          ))}
-        </Col>
-      </Row>
+    <SectionContainer title={title} id={id} backgroundImage={backgroundImage}>
+      {texts.length > 0 ? (
+        <Row className="gx-5 py-3">
+          <Col lg={12} className="py-2">
+            {/* Párrafos de texto */}
+            {texts.map((text: string, index: number) => (
+              <p key={index} className="lead">
+                {text}
+              </p>
+            ))}
+          </Col>
+        </Row>
+      ) : (
+        ""
+      )}
       <Row xs={1} md={2} className="gx-5 py-3">
         {/* Subsecciones */}
         {subsections.map((subsection: TextSection, index: number) => (
