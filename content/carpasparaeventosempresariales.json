@@ -1,0 +1,44 @@
+{
+  "route": "/CarpasParaEventosEmpresariales",
+  "title": "Carpas para eventos empresariales",
+  "titleBackgroundImage": {
+    "figureType": "imageFigure",
+    "src": "/images/carpas-eventos/dos-aguas-1.jpg",
+    "alt": "Carpa a dos aguas",
+    "cover": true
+  },
+  "displayTitle": true,
+  "sections": [
+    {
+      "sectionType": "textSection",
+      "texts": [
+        "Con nuestra amplia experiencia en el mercado y excelente servicio, tendrás espacios ideales para ejecutar tus juntas, capacitaciones y eventos corporativos con la atención personalizada de nuestro equipo."
+      ]
+    },
+    {
+      "sectionType": "carouselSection",
+      "title": "Galería",
+      "carousel": {
+        "wide": true,
+        "items": [
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "https://placeimg.com/640/480/any",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "https://placeimg.com/640/480/any",
+              "alt": "",
+              "cover": true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

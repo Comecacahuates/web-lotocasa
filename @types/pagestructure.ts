@@ -152,7 +152,7 @@ export type NavbarItem = {
   id?: string;
   title: string;
   link?: string;
-  subitems?: FooterItem[];
+  subitems?: NavbarItem[];
 };
 
 /** Elemento del pie de página */

@@ -15,12 +15,34 @@
     {
       "id": "CarpasIndustrialesNavbarItem",
       "title": "Carpas industriales",
-      "link": "/CarpasIndustriales"
+      "subitems": [
+        {
+          "title": "Áreas de trabajo",
+          "link": "/CarpasParaAreasDeTrabajo"
+        },
+        {
+          "title": "Almacenes",
+          "link": "/CarpasParaAlmacenes"
+        }
+      ]
     },
     {
       "id": "CarpasParaEventosNavbarItem",
       "title": "Carpas para eventos",
-      "link": "/CarpasParaEventos"
+      "subitems": [
+        {
+          "title": "Eventos sociales",
+          "link": "/CarpasParaEventosSociales"
+        },
+        {
+          "title": "Eventos empresariales",
+          "link": "/CarpasParaEventosEmpresariales"
+        },
+        {
+          "title": "Eventos comerciales y exposiciones",
+          "link": "/CarpasParaEventosComercialesYExposiciones"
+        }
+      ]
     },
     {
       "title": "Contacto",

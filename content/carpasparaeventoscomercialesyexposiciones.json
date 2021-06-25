@@ -1,0 +1,44 @@
+{
+  "route": "/CarpasParaEventosComercialesYExposiciones",
+  "title": "Carpas para eventos comerciales y exposiciones",
+  "titleBackgroundImage": {
+    "figureType": "imageFigure",
+    "src": "/images/carpas-eventos/dos-aguas-1.jpg",
+    "alt": "Carpa a dos aguas",
+    "cover": true
+  },
+  "displayTitle": true,
+  "sections": [
+    {
+      "sectionType": "textSection",
+      "texts": [
+        "Ofrece una experiencia memorable para tus clientes, expositores y asistentes con nuestra experiencia en la planeación y organización de eventos masivos y nuestra variedad de carpas para diferentes necesidades."
+      ]
+    },
+    {
+      "sectionType": "carouselSection",
+      "title": "Galería",
+      "carousel": {
+        "wide": true,
+        "items": [
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "https://placeimg.com/640/480/any",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "https://placeimg.com/640/480/any",
+              "alt": "",
+              "cover": true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "route": "/CarpasParaAlmacenes",
+  "title": "Carpas para almacenes",
+  "titleBackgroundImage": {
+    "figureType": "imageFigure",
+    "src": "/images/carpas-eventos/dos-aguas-1.jpg",
+    "alt": "Carpa a dos aguas",
+    "cover": true
+  },
+  "displayTitle": true,
+  "sections": [
+    {
+      "sectionType": "textSection",
+      "texts": [
+        "Incrementa tu espacio de almacenamiento para tus mercancías o materias primas de forma temporal o definitiva en tus instalaciones.",
+        "Espacios de tamaños personalizados para tus necesidades operativas con una iluminación que te permitirá trabajar cómodamente."
+      ]
+    },
+    {
+      "sectionType": "carouselSection",
+      "title": "Galería",
+      "carousel": {
+        "wide": true,
+        "items": [
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "https://placeimg.com/640/480/any",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "https://placeimg.com/640/480/any",
+              "alt": "",
+              "cover": true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

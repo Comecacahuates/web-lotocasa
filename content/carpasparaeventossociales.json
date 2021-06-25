@@ -1,0 +1,44 @@
+{
+  "route": "/CarpasParaEventosSociales",
+  "title": "Carpas para eventos sociales",
+  "titleBackgroundImage": {
+    "figureType": "imageFigure",
+    "src": "/images/carpas-eventos/dos-aguas-1.jpg",
+    "alt": "Carpa a dos aguas",
+    "cover": true
+  },
+  "displayTitle": true,
+  "sections": [
+    {
+      "sectionType": "textSection",
+      "texts": [
+        "Tus invitados quedarán fascinados con nuestras carpas de diseños espectaculares e increíbles decoraciones en tus eventos, así como la gran atención a los detalles por parte de nuestro equipo."
+      ]
+    },
+    {
+      "sectionType": "carouselSection",
+      "title": "Galería",
+      "carousel": {
+        "wide": true,
+        "items": [
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "https://placeimg.com/640/480/any",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "https://placeimg.com/640/480/any",
+              "alt": "",
+              "cover": true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

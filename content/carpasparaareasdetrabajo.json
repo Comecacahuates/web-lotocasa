@@ -1,0 +1,45 @@
+{
+  "route": "/CarpasParaAreasDeTrabajo",
+  "title": "Carpas para áreas de trabajo",
+  "titleBackgroundImage": {
+    "figureType": "imageFigure",
+    "src": "/images/carpas-eventos/dos-aguas-1.jpg",
+    "alt": "Carpa a dos aguas",
+    "cover": true
+  },
+  "displayTitle": true,
+  "sections": [
+    {
+      "sectionType": "textSection",
+      "texts": [
+        "Espacios de trabajo temporales para tus colaboradores, trabajos fuera de tu empresa o para expandir tus propias instalaciones.",
+        "Diferentes diseños de carpas con un perímetro de cortinas enrollables, iluminación perfecta y lona antirreflejante para mantener una temperatura ideal para tus actividades."
+      ]
+    },
+    {
+      "sectionType": "carouselSection",
+      "title": "Galería",
+      "carousel": {
+        "wide": true,
+        "items": [
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "https://placeimg.com/640/480/any",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "https://placeimg.com/640/480/any",
+              "alt": "",
+              "cover": true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
