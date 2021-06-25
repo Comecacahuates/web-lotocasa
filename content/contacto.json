@@ -5,9 +5,24 @@
   "sections": [
     {
       "sectionType": "contactSection",
+      "contactFormSection": {
+        "sectionType": "contactFormSection",
+        "title": "Solicita tu cotización",
+        "contactForm": {
+          "action": "https://formsubmit.co/14663cf1e1fab8363513e084818426b9",
+          "nameLabel": "Nombre",
+          "emailLabel": "Correo electrónico",
+          "messageLabel": "Escribe tu mensaje",
+          "subjectLabel": "Asunto",
+          "next": "http://localhost:3000/Contacto",
+          "captcha": false,
+          "submitLabel": "Enviar mensaje"
+        }
+      },
       "meansOfContactSection": {
         "sectionType": "meansOfContactSection",
         "title": "Medios de contacto",
+
         "meansOfContact": [
           {
             "name": "55 5769 2994",

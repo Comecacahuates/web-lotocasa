@@ -56,9 +56,16 @@ export type Figure = {
 /** Sección de contacto */
 export type ContactSection = Section & {
   sectionType: "contactSection";
+  contactFormSection: ContactFormSection;
   meansOfContactSection: MeansOfContactSection;
   addressSection: AddressSection;
   openingHoursSection: OpeningHoursSection;
+};
+
+/** Sección de formulario de contacto */
+export type ContactFormSection = Section & {
+  sectionType: "contactFormSection";
+  contactForm: ContactForm;
 };
 
 /** Sección de medios de contacto */
@@ -158,3 +165,17 @@ export type NavbarItem = {
 
 /** Elemento del pie de página */
 export type FooterItem = NavbarItem;
+
+/** Formulario de contacto */
+export type ContactForm = {
+  action: string;
+  nameLabel: string;
+  emailLabel: string;
+  messageLabel: string;
+  subjectLabel: string;
+  next: string;
+  cc?: string;
+  captcha: boolean;
+  template?: string;
+  submitLabel: string;
+};

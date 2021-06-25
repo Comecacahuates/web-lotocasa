@@ -1,9 +1,9 @@
 import * as React from "react";
-import Col from "react-bootstrap/Col";
+import Col, { ColProps } from "react-bootstrap/Col";
 import Title from "./title";
 
 /** Propiedades del componente de contenedor de subsección */
-export interface SubsectionColProps {
+export interface SubsectionColProps extends ColProps {
   title?: string;
   children: React.ReactNode;
 }
@@ -16,7 +16,7 @@ export default function SubsectionCol(props: SubsectionColProps) {
 
   /* Renderización */
   return (
-    <Col className="py-2">
+    <Col className="py-2" {...props}>
       <Title level={3}>{title}</Title>
       {children}
     </Col>

@@ -1,12 +1,12 @@
 import * as React from "react";
-import Container from "react-bootstrap/Container";
+import Container, { ContainerProps } from "react-bootstrap/Container";
 import Title from "./title";
 import { ImageFigure } from "../../@types/pagestructure";
 import Image from "./image";
 import styles from "./sectioncontainer.module.scss";
 
 /** Propiedades del componente de contenedor de sección */
-export interface SectionContainerProps {
+export interface SectionContainerProps extends ContainerProps {
   title?: string;
   id?: string;
   backgroundImage?: ImageFigure;
@@ -30,7 +30,7 @@ export default function SectionContainer(props: SectionContainerProps) {
   return (
     <div className={outerDivClasses}>
       {backgroundImage ? <Image imageFigure={backgroundImage} /> : ""}
-      <Container id={id} className={containerClasses} fluid="md">
+      <Container id={id} className={containerClasses} fluid="md" {...props}>
         {title ? <Title level={2}>{title}</Title> : ""}
         {children}
       </Container>
