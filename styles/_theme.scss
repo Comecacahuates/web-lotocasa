@@ -2,6 +2,7 @@
 $yellow: #fdcb0c;
 $yellow-dark: shade-color($yellow, 30%);
 $yellow-light: tint-color($yellow, 30%);
+$green: #5d8812;
 
 // Colores del tema
 $primary: $yellow;
@@ -10,7 +11,7 @@ $primary: $yellow;
 $body-bg: shade-color(white, 3%);
 
 // Enlaces
-$link-color: $yellow-dark;
+$link-color: $green;
 
 // Tarjetas
 $card-bg: $body-bg;
