@@ -34,6 +34,9 @@ export default function PageBuilder(props: PageBuilderProps) {
   const displayTitle: boolean = page.displayTitle || false;
   const sectionsContent: Section[] = page.sections;
 
+  /* Clases */
+  const titleBgAuxClass: string = page.titleBackgroundImage ? "bg-aux" : "";
+
   /* Renderización */
   return (
     <Layout pageTitle={title} route={route}>
@@ -46,7 +49,9 @@ export default function PageBuilder(props: PageBuilderProps) {
       {/* Título */}
       {displayTitle ? (
         <SectionContainer backgroundImage={page.titleBackgroundImage}>
-          <Title level={1}>{title}</Title>
+          <Title level={1}>
+            <span className={titleBgAuxClass}>{title}</span>
+          </Title>
         </SectionContainer>
       ) : (
         ""

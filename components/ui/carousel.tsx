@@ -32,8 +32,12 @@ export default function CarouselUI(props: CarouselProps) {
           {/* Título y pie */}
           {item.caption !== undefined ? (
             <Carousel.Caption>
-              <h1 className="display-3">{item.caption.title}</h1>
-              <p className="h4">{item.caption.text}</p>
+              <h1 className="display-3">
+                <span className="bg-aux">{item.caption.title}</span>
+              </h1>
+              <p className="h4">
+                <span className="bg-aux">{item.caption.text}</span>
+              </p>
               {item.caption.button !== undefined ? (
                 <p>
                   <ButtonLink href={item.caption.button.href}>
