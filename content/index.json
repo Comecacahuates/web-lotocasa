@@ -29,11 +29,7 @@
               "cover": true
             },
             "caption": {
-              "title": "Carpas industriales",
-              "button": {
-                "label": "Conocer más",
-                "href": "/CarpasIndustriales"
-              }
+              "title": "Carpas industriales"
             }
           },
           {
@@ -44,11 +40,7 @@
               "cover": true
             },
             "caption": {
-              "title": "Carpas para eventos",
-              "button": {
-                "label": "Conocer más",
-                "href": "/CarpasParaEventos"
-              }
+              "title": "Carpas para eventos"
             }
           }
         ]

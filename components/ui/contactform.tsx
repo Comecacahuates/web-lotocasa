@@ -3,6 +3,7 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import Icon from "./icon";
 import { ContactForm } from "../../@types/pagestructure";
 
 /** Propiedades del componente de formulario de contacto */
@@ -54,7 +55,7 @@ export default function ContactFormUI(props: ContactFormProps) {
         <Form.Control as="textarea" name="message" rows={5} />
       </Form.Group>
       <Button variant="primary" type="submit">
-        {submitLabel}
+        {submitLabel} <Icon icon="arrow-right" />
       </Button>
     </Form>
   );
