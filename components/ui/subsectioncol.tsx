@@ -5,7 +5,7 @@ import Title from "./title";
 /** Propiedades del componente de contenedor de subsección */
 export interface SubsectionColProps extends ColProps {
   title?: string;
-  hasBackgroundImage: boolean;
+  hasBackgroundImage?: boolean;
   children: React.ReactNode;
 }
 
