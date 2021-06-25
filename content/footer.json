@@ -1,7 +1,6 @@
 [
   {
     "title": "Carpas industriales",
-    "link": "/CarpasIndustriales",
     "subitems": [
       {
         "title": "Áreas de trabajo",
@@ -15,7 +14,6 @@
   },
   {
     "title": "Carpas para eventos",
-    "link": "/CarpasParaEventos",
     "subitems": [
       {
         "title": "Eventos sociales",

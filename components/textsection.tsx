@@ -25,8 +25,8 @@ export default function TextSectionUI(props: TextSectionProps) {
   return (
     <SectionContainer title={title} id={id} backgroundImage={backgroundImage}>
       {texts.length > 0 ? (
-        <Row className="gx-5 py-3">
-          <Col lg={12} className="py-2">
+        <Row sm={1} md={2} className="gx-5 py-3">
+          <Col className="py-2">
             {/* Párrafos de texto */}
             {texts.map((text: string, index: number) => (
               <p key={index} className="lead">
