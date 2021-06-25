@@ -21,21 +21,16 @@ export default function SectionContainer(props: SectionContainerProps) {
   const backgroundImage: ImageFigure | undefined = props.backgroundImage;
   const children: React.ReactNode | undefined = props.children;
 
+  /* Clases */
+  const outerDivClasses: string = backgroundImage ? styles.background : "";
+  let containerClasses: string = `py-3 overflow-hidden ${styles.container}`;
+  containerClasses += backgroundImage ? " text-light" : "";
+
   /* Renderización */
   return (
-    <div className={backgroundImage !== undefined ? styles.background : ""}>
-      {backgroundImage !== undefined ? (
-        <Image imageFigure={backgroundImage} />
-      ) : (
-        ""
-      )}
-      <Container
-        id={id}
-        className={`py-3 overflow-hidden ${styles.container} ${
-          backgroundImage ? "text-light" : ""
-        }`}
-        fluid="md"
-      >
+    <div className={outerDivClasses}>
+      {backgroundImage ? <Image imageFigure={backgroundImage} /> : ""}
+      <Container id={id} className={containerClasses} fluid="md">
         {title ? <Title level={2}>{title}</Title> : ""}
         {children}
       </Container>

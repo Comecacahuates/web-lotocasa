@@ -21,7 +21,7 @@ export default function NavbarUI(props: NavbarProps) {
   /* Renderización */
   return (
     <Navbar bg="primary" variant="light" expand="lg" sticky="top">
-      <Container>
+      <Container fluid="md">
         {/* Logo */}
         <Navbar.Brand>
           <a href="/" className="text-decoration-none text-dark">

@@ -13,8 +13,8 @@ export default function Footer() {
   /* Renderización */
   return (
     <footer className={`mt-5 overflow-hidden ${styles.footer}`}>
-      <Container>
-        <Row className="gx-5 py-5" xs={1} md={2} lg={3}>
+      <Container fluid="md">
+        <Row className="gx-5 py-5" xs={1} sm={2} lg={3}>
           {/* Columnas del pie de página */}
           {footerItems.map((item: FooterItem, index: number) => (
             <Col key={index}>
