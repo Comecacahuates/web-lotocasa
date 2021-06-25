@@ -16,22 +16,31 @@ export interface SectionContainerProps extends ContainerProps {
 /** Componente de contenedor de sección */
 export default function SectionContainer(props: SectionContainerProps) {
   /* Propiedades */
-  const title: string | undefined = props.title;
-  const id: string = props.id || "";
-  const backgroundImage: ImageFigure | undefined = props.backgroundImage;
-  const children: React.ReactNode | undefined = props.children;
+  const { title, id, backgroundImage, children, ...containerProps } = props;
 
   /* Clases */
   const outerDivClasses: string = backgroundImage ? styles.background : "";
   let containerClasses: string = `py-3 overflow-hidden ${styles.container}`;
   containerClasses += backgroundImage ? " text-light" : "";
+  const bgAuxClass: string = backgroundImage ? "bg-aux" : "";
 
   /* Renderización */
   return (
     <div className={outerDivClasses}>
       {backgroundImage ? <Image imageFigure={backgroundImage} /> : ""}
-      <Container id={id} className={containerClasses} fluid="md" {...props}>
-        {title ? <Title level={2}>{title}</Title> : ""}
+      <Container
+        id={id}
+        className={containerClasses}
+        fluid="md"
+        {...containerProps}
+      >
+        {title ? (
+          <Title level={2}>
+            <span className={bgAuxClass}>{title}</span>
+          </Title>
+        ) : (
+          ""
+        )}
         {children}
       </Container>
     </div>

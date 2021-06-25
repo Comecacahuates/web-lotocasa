@@ -21,6 +21,9 @@ export default function TextSectionUI(props: TextSectionProps) {
   const texts: string[] = textSection.texts;
   const subsections: TextSection[] = textSection.subsections || [];
 
+  /* Clases */
+  const bgAuxClass: string = backgroundImage ? "bg-aux" : "";
+
   /* Renderización */
   return (
     <SectionContainer title={title} id={id} backgroundImage={backgroundImage}>
@@ -30,7 +33,7 @@ export default function TextSectionUI(props: TextSectionProps) {
             {/* Párrafos de texto */}
             {texts.map((text: string, index: number) => (
               <p key={index} className="lead">
-                {text}
+                <span className={bgAuxClass}>{text}</span>
               </p>
             ))}
           </Col>
@@ -41,10 +44,14 @@ export default function TextSectionUI(props: TextSectionProps) {
       <Row xs={1} md={2} className="gx-5 py-3">
         {/* Subsecciones */}
         {subsections.map((subsection: TextSection, index: number) => (
-          <SubsectionCol key={index} title={subsection.title}>
+          <SubsectionCol
+            key={index}
+            title={subsection.title}
+            hasBackgroundImage={backgroundImage !== undefined}
+          >
             {subsection.texts.map((text: string, index: number) => (
               <p key={index} className="lead">
-                {text}
+                <span className={bgAuxClass}>{text}</span>
               </p>
             ))}
             {subsection.button !== undefined ? (
