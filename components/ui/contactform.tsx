@@ -36,14 +36,12 @@ export default function ContactFormUI(props: ContactFormProps) {
   /* Propiedades */
   const contactForm: ContactForm = props.contactForm;
   const onFormSubmitted: (success: boolean) => void = props.onFormSubmitted;
-  const emailKey: string = contactForm.emailKey;
+  const submitUrl: string = contactForm.submitUrl;
   const nameLabel: string = contactForm.nameLabel;
   const emailLabel: string = contactForm.emailLabel;
   const messageLabel: string = contactForm.messageLabel;
   const subjectLabel: string = contactForm.subjectLabel;
-  const cc: string | undefined = contactForm.cc;
-  const captcha: boolean = contactForm.captcha;
-  const template: string | undefined = contactForm.template;
+
   const submitLabel: string = contactForm.submitLabel;
 
   /* Renderización */
@@ -51,10 +49,8 @@ export default function ContactFormUI(props: ContactFormProps) {
     <Formik
       validationSchema={validationSchema}
       initialValues={{ name: "", email: "", subject: "", message: "" }}
-      /* TODO: Corregir el envío del formulario */
-      onSubmit={(values) => {
-        console.log(values);
-        fetch(`https://formsubmit.co/ajax/${emailKey}`, {
+      onSubmit={(values, formikBag) => {
+        fetch(submitUrl, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -64,24 +60,21 @@ export default function ContactFormUI(props: ContactFormProps) {
             name: values.name,
             email: values.email,
             message: values.message,
-            _replyto: values.email,
-            _subject: values.subject,
-            _captcha: captcha,
+            subject: values.subject,
           }),
         })
           .then((response) => {
             console.log(response);
             if (response.ok) {
               onFormSubmitted(true);
+              formikBag.resetForm();
             } else {
               onFormSubmitted(false);
             }
-            return response.json();
           })
-          .then((data) => console.log(data))
           .catch((error) => {
-            onFormSubmitted(false);
             console.log(error);
+            onFormSubmitted(false);
           });
       }}
     >

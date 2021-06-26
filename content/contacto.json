@@ -9,7 +9,7 @@
         "sectionType": "contactFormSection",
         "title": "Solicita una cotización",
         "contactForm": {
-          "emailKey": "14663cf1e1fab8363513e084818426b9",
+          "submitUrl": "https://submit-form.com/8J2rw5U2",
           "nameLabel": "Nombre",
           "emailLabel": "Correo electrónico",
           "messageLabel": "Escribe tu mensaje",

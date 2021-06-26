@@ -172,13 +172,10 @@ export type FooterItem = NavbarItem;
 
 /** Formulario de contacto */
 export type ContactForm = {
-  emailKey: string;
+  submitUrl: string;
   nameLabel: string;
   emailLabel: string;
   messageLabel: string;
   subjectLabel: string;
-  cc?: string;
-  captcha: boolean;
-  template?: string;
   submitLabel: string;
 };
