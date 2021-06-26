@@ -12,6 +12,7 @@
           "submitUrl": "https://submit-form.com/8J2rw5U2",
           "nameLabel": "Nombre",
           "emailLabel": "Correo electrónico",
+          "phoneLabel": "Número de teléfono",
           "messageLabel": "Escribe tu mensaje",
           "subjectLabel": "Asunto",
           "captcha": false,
@@ -59,7 +60,7 @@
         "title": "Horario de atención",
         "openingHours": [
           {
-            "days": "lun - sab",
+            "days": "lun - sáb",
             "hours": "9:00 - 20:00"
           }
         ]

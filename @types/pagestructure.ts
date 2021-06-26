@@ -175,6 +175,7 @@ export type ContactForm = {
   submitUrl: string;
   nameLabel: string;
   emailLabel: string;
+  phoneLabel: string;
   messageLabel: string;
   subjectLabel: string;
   submitLabel: string;

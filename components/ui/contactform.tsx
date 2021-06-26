@@ -7,6 +7,7 @@ import Icon from "./icon";
 import { ContactForm } from "../../@types/pagestructure";
 import { Formik } from "formik";
 import * as Yup from "yup";
+import "yup-phone-lite";
 
 /** Propiedades del componente de formulario de contacto */
 export interface ContactFormProps {
@@ -22,6 +23,9 @@ const validationSchema = Yup.object({
   email: Yup.string()
     .email("La dirección de correo no es válida")
     .required("El correo electrónico es requerido"),
+  phone: Yup.string()
+    .phone("MX", "El número de teléfono no es válido")
+    .required("El número de teléfono es requerido"),
   subject: Yup.string()
     .max(100, "El asunto no puede ser mayor a 100 carácteres")
     .required("El asunto es requerido"),
@@ -39,6 +43,7 @@ export default function ContactFormUI(props: ContactFormProps) {
   const submitUrl: string = contactForm.submitUrl;
   const nameLabel: string = contactForm.nameLabel;
   const emailLabel: string = contactForm.emailLabel;
+  const phoneLabel: string = contactForm.phoneLabel;
   const messageLabel: string = contactForm.messageLabel;
   const subjectLabel: string = contactForm.subjectLabel;
 
@@ -48,7 +53,13 @@ export default function ContactFormUI(props: ContactFormProps) {
   return (
     <Formik
       validationSchema={validationSchema}
-      initialValues={{ name: "", email: "", subject: "", message: "" }}
+      initialValues={{
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      }}
       onSubmit={(values, formikBag) => {
         fetch(submitUrl, {
           method: "POST",
@@ -59,6 +70,7 @@ export default function ContactFormUI(props: ContactFormProps) {
           body: JSON.stringify({
             name: values.name,
             email: values.email,
+            phone: values.phone,
             message: values.message,
             subject: values.subject,
           }),
@@ -93,6 +105,8 @@ export default function ContactFormUI(props: ContactFormProps) {
                 {errors.name}
               </Form.Control.Feedback>
             </Form.Group>
+          </Row>
+          <Row>
             {/* Correo */}
             <Form.Group className="mb-3" as={Col} xs={12} sm={6}>
               <Form.Label>{emailLabel}</Form.Label>
@@ -104,6 +118,19 @@ export default function ContactFormUI(props: ContactFormProps) {
               />
               <Form.Control.Feedback type="invalid">
                 {errors.email}
+              </Form.Control.Feedback>
+            </Form.Group>
+            {/* Número de teléfono */}
+            <Form.Group className="mb-3" as={Col} xs={12} sm={6}>
+              <Form.Label>{phoneLabel}</Form.Label>
+              <Form.Control
+                type="tel"
+                value={values.phone}
+                {...getFieldProps("phone")}
+                isInvalid={touched.phone && !!errors.phone}
+              />
+              <Form.Control.Feedback type="invalid">
+                {errors.phone}
               </Form.Control.Feedback>
             </Form.Group>
           </Row>
