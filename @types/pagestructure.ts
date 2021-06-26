@@ -57,6 +57,10 @@ export type Figure = {
 export type ContactSection = Section & {
   sectionType: "contactSection";
   contactFormSection: ContactFormSection;
+  formSubmittedModalTitle: string;
+  formSubmittedModalBody: string;
+  formSubmittedModalErrorTitle: string;
+  formSubmittedModalErrorBody: string;
   meansOfContactSection: MeansOfContactSection;
   addressSection: AddressSection;
   openingHoursSection: OpeningHoursSection;
@@ -168,12 +172,11 @@ export type FooterItem = NavbarItem;
 
 /** Formulario de contacto */
 export type ContactForm = {
-  action: string;
+  emailKey: string;
   nameLabel: string;
   emailLabel: string;
   messageLabel: string;
   subjectLabel: string;
-  next: string;
   cc?: string;
   captcha: boolean;
   template?: string;

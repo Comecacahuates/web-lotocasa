@@ -9,16 +9,19 @@
         "sectionType": "contactFormSection",
         "title": "Solicita una cotización",
         "contactForm": {
-          "action": "https://formsubmit.co/14663cf1e1fab8363513e084818426b9",
+          "emailKey": "14663cf1e1fab8363513e084818426b9",
           "nameLabel": "Nombre",
           "emailLabel": "Correo electrónico",
           "messageLabel": "Escribe tu mensaje",
           "subjectLabel": "Asunto",
-          "next": "http://localhost:3000/Contacto",
           "captcha": false,
           "submitLabel": "Enviar mensaje"
         }
       },
+      "formSubmittedModalTitle": "Mensaje enviado",
+      "formSubmittedModalBody": "Nos pondremos en contacto contigo para responder tu mensaje",
+      "formSubmittedModalErrorTitle": "Error",
+      "formSubmittedModalErrorBody": "Hubo un error al enviar el mensaje. Inténtalo de nuevo.",
       "meansOfContactSection": {
         "sectionType": "meansOfContactSection",
         "title": "Medios de contacto",

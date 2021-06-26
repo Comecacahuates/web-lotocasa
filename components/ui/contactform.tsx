@@ -11,6 +11,7 @@ import * as Yup from "yup";
 /** Propiedades del componente de formulario de contacto */
 export interface ContactFormProps {
   contactForm: ContactForm;
+  onFormSubmitted: (success: boolean) => void;
 }
 
 /** Esquema de validación */
@@ -34,12 +35,12 @@ const validationSchema = Yup.object({
 export default function ContactFormUI(props: ContactFormProps) {
   /* Propiedades */
   const contactForm: ContactForm = props.contactForm;
-  const action: string = contactForm.action;
+  const onFormSubmitted: (success: boolean) => void = props.onFormSubmitted;
+  const emailKey: string = contactForm.emailKey;
   const nameLabel: string = contactForm.nameLabel;
   const emailLabel: string = contactForm.emailLabel;
   const messageLabel: string = contactForm.messageLabel;
   const subjectLabel: string = contactForm.subjectLabel;
-  const next: string = contactForm.next;
   const cc: string | undefined = contactForm.cc;
   const captcha: boolean = contactForm.captcha;
   const template: string | undefined = contactForm.template;
@@ -49,9 +50,40 @@ export default function ContactFormUI(props: ContactFormProps) {
   return (
     <Formik
       validationSchema={validationSchema}
-      initialValues={{ name: "", email: "", subject: "", message: "", next }}
-      /* TODO: Enviar el formulario */
-      onSubmit={(values) => alert(JSON.stringify(values, null, 2))}
+      initialValues={{ name: "", email: "", subject: "", message: "" }}
+      /* TODO: Corregir el envío del formulario */
+      onSubmit={(values) => {
+        console.log(values);
+        fetch(`https://formsubmit.co/ajax/${emailKey}`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            name: values.name,
+            email: values.email,
+            message: values.message,
+            _replyto: values.email,
+            _subject: values.subject,
+            _captcha: captcha,
+          }),
+        })
+          .then((response) => {
+            console.log(response);
+            if (response.ok) {
+              onFormSubmitted(true);
+            } else {
+              onFormSubmitted(false);
+            }
+            return response.json();
+          })
+          .then((data) => console.log(data))
+          .catch((error) => {
+            onFormSubmitted(false);
+            console.log(error);
+          });
+      }}
     >
       {({ handleSubmit, values, touched, errors, getFieldProps }) => (
         <Form className="mb-3" noValidate onSubmit={handleSubmit}>

@@ -1,6 +1,8 @@
 import * as React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
 import SectionContainer from "./ui/sectioncontainer";
 import SubsectionCol from "./ui/subsectioncol";
 import ListItem from "./ui/listitem";
@@ -26,11 +28,32 @@ export default function ContactSectionUI(props: ContactSectionProps) {
   const contactSection: ContactSection = props.contactSection;
   const contactFormSection: ContactFormSection =
     contactSection.contactFormSection;
+  const successModalTitle: string = contactSection.formSubmittedModalTitle;
+  const successModalBody: string = contactSection.formSubmittedModalBody;
+  const errorModalTitle: string = contactSection.formSubmittedModalErrorTitle;
+  const errorModalBody: string = contactSection.formSubmittedModalErrorBody;
   const meansOfContactSection: MeansOfContactSection =
     contactSection.meansOfContactSection;
   const addressSection: AddressSection = contactSection.addressSection;
   const openingHoursSection: OpeningHoursSection =
     contactSection.openingHoursSection;
+
+  /* Estado */
+  const [modalShow, setModalShow] = React.useState<boolean>(false);
+  const [modalTitle, setModalTitle] = React.useState<string>("");
+  const [modalBody, setModalBody] = React.useState<string>("");
+
+  /* Evento de formulario enviado */
+  const formSubmittedHandler = (success: boolean) => {
+    if (success) {
+      setModalTitle(successModalTitle);
+      setModalBody(successModalBody);
+    } else {
+      setModalTitle(errorModalTitle);
+      setModalBody(errorModalBody);
+    }
+    setModalShow(true);
+  };
 
   /* Renderización */
   return (
@@ -40,7 +63,10 @@ export default function ContactSectionUI(props: ContactSectionProps) {
           <Row>
             {/* Formulario de contacto */}
             <SubsectionCol xs={12} title={contactFormSection.title}>
-              <ContactForm contactForm={contactFormSection.contactForm} />
+              <ContactForm
+                contactForm={contactFormSection.contactForm}
+                onFormSubmitted={formSubmittedHandler}
+              />
             </SubsectionCol>
           </Row>
         </Col>
@@ -88,6 +114,18 @@ export default function ContactSectionUI(props: ContactSectionProps) {
           </Row>
         </Col>
       </Row>
+      {/* Modal de formulario de contacto */}
+      <Modal show={modalShow} onHide={() => setModalShow(false)}>
+        <Modal.Header closeButton>
+          <Modal.Title>{modalTitle}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{modalBody}</Modal.Body>
+        <Modal.Footer>
+          <Button variant="primary" onClick={() => setModalShow(false)}>
+            Cerrar
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </SectionContainer>
   );
 }
