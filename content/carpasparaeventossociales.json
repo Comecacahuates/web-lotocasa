@@ -3,7 +3,7 @@
   "title": "Carpas para eventos sociales",
   "titleBackgroundImage": {
     "figureType": "imageFigure",
-    "src": "/images/carpas-eventos/dos-aguas-1.jpg",
+    "src": "/images/carpas-para-eventos/eventos-sociales/00-dos-aguas.jpg",
     "alt": "Carpa a dos aguas",
     "cover": true
   },
@@ -24,7 +24,7 @@
           {
             "image": {
               "figureType": "imageFigure",
-              "src": "https://placeimg.com/640/480/any",
+              "src": "/images/carpas-para-eventos/eventos-sociales/00-dos-aguas.jpg",
               "alt": "",
               "cover": true
             }
@@ -32,7 +32,167 @@
           {
             "image": {
               "figureType": "imageFigure",
-              "src": "https://placeimg.com/640/480/any",
+              "src": "/images/carpas-para-eventos/eventos-sociales/01-jaima.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/02-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/03-jaima.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/04-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/05-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/06-jaima.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/07-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/08-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/09-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/10-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/11-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/12-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/13-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/14-jaima.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/15-domo.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/16-domo.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/17-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/18-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/19-domo.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/20-domo.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/21-domo.jpg",
               "alt": "",
               "cover": true
             }

@@ -3,7 +3,7 @@
   "title": "Carpas para eventos comerciales y exposiciones",
   "titleBackgroundImage": {
     "figureType": "imageFigure",
-    "src": "/images/carpas-eventos/dos-aguas-1.jpg",
+    "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/00-dos-aguas.jpg",
     "alt": "Carpa a dos aguas",
     "cover": true
   },
@@ -24,7 +24,7 @@
           {
             "image": {
               "figureType": "imageFigure",
-              "src": "https://placeimg.com/640/480/any",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/00-dos-aguas.jpg",
               "alt": "",
               "cover": true
             }
@@ -32,7 +32,119 @@
           {
             "image": {
               "figureType": "imageFigure",
-              "src": "https://placeimg.com/640/480/any",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/01-domo.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/02-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/03-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/04-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/05-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/06-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/07-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/08-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/09-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/10-domo.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/11-jaima.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/12-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/13-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/14-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/15-estrella.jpg",
               "alt": "",
               "cover": true
             }

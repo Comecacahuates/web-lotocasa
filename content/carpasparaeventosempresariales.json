@@ -3,7 +3,7 @@
   "title": "Carpas para eventos empresariales",
   "titleBackgroundImage": {
     "figureType": "imageFigure",
-    "src": "/images/carpas-eventos/dos-aguas-1.jpg",
+    "src": "/images/carpas-eventos/eventos-empresariales/00-dos-aguas.jpg-",
     "alt": "Carpa a dos aguas",
     "cover": true
   },
@@ -24,7 +24,7 @@
           {
             "image": {
               "figureType": "imageFigure",
-              "src": "https://placeimg.com/640/480/any",
+              "src": "/images/carpas-para-eventos/eventos-empresariales/00-dos-aguas.jpg",
               "alt": "",
               "cover": true
             }
@@ -32,7 +32,63 @@
           {
             "image": {
               "figureType": "imageFigure",
-              "src": "https://placeimg.com/640/480/any",
+              "src": "/images/carpas-para-eventos/eventos-empresariales/01-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-empresariales/03-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-empresariales/04-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-empresariales/05-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-empresariales/06-jaima.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-empresariales/07-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-empresariales/08-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-empresariales/09-dos-aguas.jpg",
               "alt": "",
               "cover": true
             }

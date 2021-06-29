@@ -3,7 +3,7 @@
   "title": "Carpas para almacenes",
   "titleBackgroundImage": {
     "figureType": "imageFigure",
-    "src": "/images/carpas-eventos/dos-aguas-1.jpg",
+    "src": "/images/carpas-industriales/almacenes/00-domo.jpg",
     "alt": "Carpa a dos aguas",
     "cover": true
   },
@@ -25,7 +25,7 @@
           {
             "image": {
               "figureType": "imageFigure",
-              "src": "https://placeimg.com/640/480/any",
+              "src": "/images/carpas-industriales/almacenes/00-domo.jpg",
               "alt": "",
               "cover": true
             }
@@ -33,7 +33,71 @@
           {
             "image": {
               "figureType": "imageFigure",
-              "src": "https://placeimg.com/640/480/any",
+              "src": "/images/carpas-industriales/almacenes/01-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-industriales/almacenes/02-domo.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-industriales/almacenes/03-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-industriales/almacenes/04-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-industriales/almacenes/05-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-industriales/almacenes/06-domo.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-industriales/almacenes/07-domo.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-industriales/almacenes/08-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-industriales/almacenes/09-dos-aguas.jpg",
               "alt": "",
               "cover": true
             }

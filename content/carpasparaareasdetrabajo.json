@@ -3,7 +3,7 @@
   "title": "Carpas para áreas de trabajo",
   "titleBackgroundImage": {
     "figureType": "imageFigure",
-    "src": "/images/carpas-industriales/domo-0.jpg",
+    "src": "/images/carpas-industriales/areas-de-trabajo/00-domo.jpg",
     "alt": "Carpa a dos aguas",
     "cover": true
   },
@@ -25,7 +25,7 @@
           {
             "image": {
               "figureType": "imageFigure",
-              "src": "https://placeimg.com/640/480/any",
+              "src": "/images/carpas-industriales/areas-de-trabajo/00-domo.jpg",
               "alt": "",
               "cover": true
             }
@@ -33,7 +33,55 @@
           {
             "image": {
               "figureType": "imageFigure",
-              "src": "https://placeimg.com/640/480/any",
+              "src": "/images/carpas-industriales/areas-de-trabajo/01-domo.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-industriales/areas-de-trabajo/02-domo.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-industriales/areas-de-trabajo/03-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-industriales/areas-de-trabajo/04-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-industriales/areas-de-trabajo/05-dos-aguas.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-industriales/areas-de-trabajo/06-domo.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-industriales/areas-de-trabajo/07-dos-aguas.jpg",
               "alt": "",
               "cover": true
             }
