@@ -13,7 +13,7 @@
           {
             "image": {
               "figureType": "imageFigure",
-              "src": "/images/carpas-eventos/dos-aguas-0.jpg",
+              "src": "/images/carpas-para-eventos/eventos-empresariales/07-dos-aguas.jpg",
               "alt": "Carpa a dos aguas",
               "cover": true
             },
@@ -24,7 +24,7 @@
           {
             "image": {
               "figureType": "imageFigure",
-              "src": "https://placeimg.com/640/480/any",
+              "src": "/images/carpas-industriales/areas-de-trabajo/00-domo.jpg",
               "alt": "",
               "cover": true
             },
@@ -35,7 +35,7 @@
           {
             "image": {
               "figureType": "imageFigure",
-              "src": "https://placeimg.com/640/480/any",
+              "src": "/images/carpas-para-eventos/eventos-comerciales-y-exposiciones/00-dos-aguas.jpg",
               "alt": "",
               "cover": true
             },
@@ -55,7 +55,7 @@
       "sectionType": "textSection",
       "backgroundImage": {
         "figureType": "imageFigure",
-        "src": "/images/carpas-industriales/domo-0.jpg",
+        "src": "/images/carpas-industriales/almacenes/02-domo.jpg",
         "alt": "Carpa a dos aguas",
         "cover": true
       },
@@ -88,7 +88,7 @@
       "sectionType": "textSection",
       "backgroundImage": {
         "figureType": "imageFigure",
-        "src": "/images/carpas-eventos/dos-aguas-1.jpg",
+        "src": "/images/carpas-para-eventos/eventos-empresariales/00-dos-aguas.jpg",
         "alt": "Carpa a dos aguas",
         "cover": true
       },
