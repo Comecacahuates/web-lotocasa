@@ -11,7 +11,10 @@
 .carouselitem {
   height: 450px;
   @include media-breakpoint-up(md) {
-    height: 600px;
+    height: 50vw;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 40vw;
   }
 }
 
