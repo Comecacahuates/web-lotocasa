@@ -155,7 +155,7 @@
           "name": "Cliente",
           "image": {
             "figureType": "imageFigure",
-            "src": "https://placeimg.com/100/100/any",
+            "src": "/images/clientes/00-ifahto.png",
             "alt": "",
             "cover": false,
             "width": 100,
@@ -166,7 +166,7 @@
           "name": "Cliente",
           "image": {
             "figureType": "imageFigure",
-            "src": "https://placeimg.com/100/100/any",
+            "src": "/images/clientes/01-smurfit-kappa.png",
             "alt": "",
             "cover": false,
             "width": 100,
@@ -177,7 +177,7 @@
           "name": "Cliente",
           "image": {
             "figureType": "imageFigure",
-            "src": "https://placeimg.com/100/100/any",
+            "src": "/images/clientes/02-el-palacio-de-hierro.png",
             "alt": "",
             "cover": false,
             "width": 100,
@@ -188,7 +188,51 @@
           "name": "Cliente",
           "image": {
             "figureType": "imageFigure",
-            "src": "https://placeimg.com/100/100/any",
+            "src": "/images/clientes/03-p&g.png",
+            "alt": "",
+            "cover": false,
+            "width": 100,
+            "height": 100
+          }
+        },
+        {
+          "name": "Cliente",
+          "image": {
+            "figureType": "imageFigure",
+            "src": "/images/clientes/04-nestle.png",
+            "alt": "",
+            "cover": false,
+            "width": 100,
+            "height": 100
+          }
+        },
+        {
+          "name": "Cliente",
+          "image": {
+            "figureType": "imageFigure",
+            "src": "/images/clientes/05-sanborns.png",
+            "alt": "",
+            "cover": false,
+            "width": 100,
+            "height": 100
+          }
+        },
+        {
+          "name": "Cliente",
+          "image": {
+            "figureType": "imageFigure",
+            "src": "/images/clientes/06-sears.png",
+            "alt": "",
+            "cover": false,
+            "width": 100,
+            "height": 100
+          }
+        },
+        {
+          "name": "Cliente",
+          "image": {
+            "figureType": "imageFigure",
+            "src": "/images/clientes/07-walmart.png",
             "alt": "",
             "cover": false,
             "width": 100,

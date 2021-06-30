@@ -3,7 +3,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import SectionContainer from "./ui/sectioncontainer";
-import Image from "./ui/image";
+import Image from "next/image";
+import styles from "./customerssection.module.scss";
 import { CustomersSection, Customer } from "../@types/pagestructure";
 
 /** Propiedades del componente de sección de clientes */
@@ -22,13 +23,18 @@ export default function CustomersSectionUI(props: CustomersSectionProps) {
   return (
     <SectionContainer title={title}>
       {/* Lista de clientes */}
-      <Row className="gx-5 py-3 justify-content-evenly" xs={1} md={2} lg={4}>
+      <div className="d-flex flex-column flex-md-row align-items-center align-items-md-stretch justify-content-evenly flex-wrap">
         {list.map((item: Customer, index: number) => (
-          <Col key={index} className="text-center py-2">
-            <Image imageFigure={item.image} />
-          </Col>
+          <div key={index} className={`my-4 ${styles.customerImageContainer}`}>
+            <Image
+              src={item.image.src}
+              alt={item.image.alt}
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
         ))}
-      </Row>
+      </div>
     </SectionContainer>
   );
 }
