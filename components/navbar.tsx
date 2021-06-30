@@ -1,9 +1,11 @@
 import * as React from "react";
+import Image from "next/image";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
-import { Navbar as NavbarStruct, NavbarItem } from "../@types/pagestructure";
+import { NavbarItem } from "../@types/pagestructure";
+import styles from "./navbar.module.scss";
 
 import navbar from "../content/navbar.json";
 
@@ -25,12 +27,16 @@ export default function NavbarUI(props: NavbarProps) {
         {/* Logo */}
         <Navbar.Brand>
           <a href="/" className="text-decoration-none text-dark">
-            <img
-              src={navbar.logo.src}
-              alt={navbar.logo.alt}
-              height={navbar.logo.width}
-              className="d-inline-block align-middle"
-            />{" "}
+            <div
+              className={`position-relative d-inline-block align-middle ${styles.logo}`}
+            >
+              <Image
+                src={navbar.logo.src}
+                alt={navbar.logo.alt}
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
             Lonas, Toldos y Carpas
           </a>
         </Navbar.Brand>
