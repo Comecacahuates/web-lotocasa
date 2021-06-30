@@ -4,11 +4,11 @@
     "subitems": [
       {
         "title": "Áreas de trabajo",
-        "link": "/CarpasIndustriales#AreasDeTrabajo"
+        "link": "/CarpasParaAreasDeTrabajo"
       },
       {
         "title": "Almacenes",
-        "link": "/CarpasIndustriales#Almacenes"
+        "link": "/CarpasParaAlmacenes"
       }
     ]
   },
@@ -17,15 +17,15 @@
     "subitems": [
       {
         "title": "Eventos sociales",
-        "link": "/CarpasParaEventos#EventosSociales"
+        "link": "/CarpasParaEventosSociales"
       },
       {
         "title": "Eventos empresariales",
-        "link": "/CarpasParaEventos#EventosEmpresariales"
+        "link": "/CarpasParaEventosEmpresariales"
       },
       {
         "title": "Eventos comerciales y exposiciones",
-        "link": "/CarpasParaEventos#EventosComercialesYExposiciones"
+        "link": "/CarpasParaEventosComercialesYExposiciones"
       }
     ]
   },
