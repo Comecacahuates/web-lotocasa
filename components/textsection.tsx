@@ -1,4 +1,5 @@
 import * as React from "react";
+import ReactMarkdown from "react-markdown";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ButtonLink from "./ui/buttonlink";
@@ -28,13 +29,22 @@ export default function TextSectionUI(props: TextSectionProps) {
   return (
     <SectionContainer title={title} id={id} backgroundImage={backgroundImage}>
       {texts.length > 0 ? (
-        <Row sm={1} md={2} className="gx-5 py-3">
-          <Col className="py-2">
+        <Row className="gx-5 py-3">
+          <Col className="py-2" md={12} lg={8}>
             {/* Párrafos de texto */}
             {texts.map((text: string, index: number) => (
-              <p key={index} className="lead">
-                <span className={bgAuxClass}>{text}</span>
-              </p>
+              <ReactMarkdown
+                key={index}
+                components={{
+                  p: ({ node, children, ...props }) => (
+                    <p className="lead" {...props}>
+                      <span className={bgAuxClass}>{children}</span>
+                    </p>
+                  ),
+                }}
+              >
+                {text}
+              </ReactMarkdown>
             ))}
           </Col>
         </Row>
@@ -50,9 +60,18 @@ export default function TextSectionUI(props: TextSectionProps) {
             hasBackgroundImage={backgroundImage !== undefined}
           >
             {subsection.texts.map((text: string, index: number) => (
-              <p key={index} className="lead">
-                <span className={bgAuxClass}>{text}</span>
-              </p>
+              <ReactMarkdown
+                key={index}
+                components={{
+                  p: ({ node, children, ...props }) => (
+                    <p className="lead" {...props}>
+                      <span className={bgAuxClass}>{children}</span>
+                    </p>
+                  ),
+                }}
+              >
+                {text}
+              </ReactMarkdown>
             ))}
             {subsection.button !== undefined ? (
               <p>

@@ -16,6 +16,7 @@
     "react": "17.0.2",
     "react-bootstrap": "^2.0.0-beta.1",
     "react-dom": "17.0.2",
+    "react-markdown": "^6.0.2",
     "sass": "^1.35.1",
     "yup": "^0.32.9",
     "yup-phone-lite": "^1.0.4"
