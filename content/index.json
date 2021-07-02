@@ -13,7 +13,7 @@
           {
             "image": {
               "figureType": "imageFigure",
-              "src": "/images/carpas-para-eventos/eventos-empresariales/07-dos-aguas.jpg",
+              "src": "/images/carpas-para-eventos/eventos-sociales/05-dos-aguas.jpg",
               "alt": "Carpa a dos aguas",
               "cover": true
             },
@@ -48,14 +48,33 @@
     },
     {
       "sectionType": "textSection",
-      "title": "Servicios",
-      "texts": ["Nuestros servicios son..."]
+      "title": "Acerca de nosotros",
+      "texts": [
+        "Somos una empresa que, **desde 1997**, se dedica a la confección de lonas y la venta y alquiler de carpas para cualquier necesidad, como almacenamiento, bodas, ferias, festivales, etc.",
+        "Con el objetivo de satisfacer los requerimientos funcionales y estéticos de nuestros clientes, a lo largo de más de 24 años, hemos ampliado nuestro catálogo para ofrecer diferentes tipos de carpas, como dos aguas, domo, jaima, cónicas y estrella."
+      ],
+      "subsections": [
+        {
+          "sectionType": "textSection",
+          "title": "Misión",
+          "texts": [
+            "Acondicionar cualquier espacio para que nuestros clientes puedan disponer de él con la comodidad que requieren para llevar a cabo su evento o proyecto, así como brindarles una atención y servicio de calidad para satisfacer sus necesidades."
+          ]
+        },
+        {
+          "sectionType": "textSection",
+          "title": "Visión",
+          "texts": [
+            "Convertirnos en una empresa reconocida por el profesionalismo y excelencia del servicios que ofrecemos para proporcionar a nuestros clientes experiencias que constantemente superen sus expectativas."
+          ]
+        }
+      ]
     },
     {
       "sectionType": "textSection",
       "backgroundImage": {
         "figureType": "imageFigure",
-        "src": "/images/carpas-industriales/almacenes/02-domo.jpg",
+        "src": "/images/carpas-industriales/areas-de-trabajo/02-domo.jpg",
         "alt": "Carpa a dos aguas",
         "cover": true
       },
@@ -67,7 +86,9 @@
         {
           "sectionType": "textSection",
           "title": "Áreas de trabajo",
-          "texts": ["Texto de carpas de áreas de trabajo..."],
+          "texts": [
+            "Crea un espacio provisional de trabajo para tus operaciones."
+          ],
           "button": {
             "label": "Conocer más",
             "href": "/CarpasParaAreasDeTrabajo"
@@ -76,7 +97,9 @@
         {
           "sectionType": "textSection",
           "title": "Almacenes",
-          "texts": ["Texto de carpas de almacenes..."],
+          "texts": [
+            "Incrementa tu capacidad temporalemente para aumentar tu stock de mercancias y materias primas."
+          ],
           "button": {
             "label": "Conocer más",
             "href": "/CarpasParaAlmacenes"
@@ -100,7 +123,9 @@
         {
           "sectionType": "textSection",
           "title": "Evento sociales",
-          "texts": ["Texto de carpas de eventos sociales..."],
+          "texts": [
+            "Cubrimos tu evento soñado con diseños elegantes y frescos."
+          ],
           "button": {
             "label": "Conocer más",
             "href": "/CarpasParaEventosSociales"
@@ -109,7 +134,9 @@
         {
           "sectionType": "textSection",
           "title": "Eventos empresariales",
-          "texts": ["Texto de carpas de eventos empresariales..."],
+          "texts": [
+            "Una gran opción para crear espacios para entrenamiento de personal convenciones y eventos corporativos para tu empresa."
+          ],
           "button": {
             "label": "Conocer más",
             "href": "/CarpasParaEventosEmpresariales"
@@ -118,32 +145,13 @@
         {
           "sectionType": "textSection",
           "title": "Eventos comerciales y exposiciones",
-          "texts": ["Texto de carpas de eventos comerciales y exposiciones..."],
+          "texts": [
+            "Contamos con una amplia variedad de carpas para tu exposción o evento masivo."
+          ],
           "button": {
             "label": "Conocer más",
             "href": "/CarpasParaEventosComercialesYExposiciones"
           }
-        }
-      ]
-    },
-    {
-      "sectionType": "textSection",
-      "title": "Acerca de nosotros",
-      "texts": ["Somos una empresa..."],
-      "subsections": [
-        {
-          "sectionType": "textSection",
-          "title": "Misión",
-          "texts": [
-            "Acondicionar cualquier espacio para que nuestros clientes puedan disponer de él con la comodidad que requieren para llevar a cabo su evento o proyecto, así como brindarles una atención y servicio de calidad para satisfacer sus necesidades."
-          ]
-        },
-        {
-          "sectionType": "textSection",
-          "title": "Visión",
-          "texts": [
-            "Convertirnos en una empresa reconocida por el profesionalismo y excelencia del servicios que ofrecemos para proporcionar a nuestros clientes experiencias que constantemente superen sus expectativas."
-          ]
         }
       ]
     },
