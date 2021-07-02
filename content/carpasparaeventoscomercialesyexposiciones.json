@@ -13,7 +13,11 @@
       "sectionType": "textSection",
       "texts": [
         "Ofrece una experiencia memorable para tus clientes, expositores y asistentes con nuestra experiencia en la planeación y organización de eventos masivos y nuestra variedad de carpas para diferentes necesidades."
-      ]
+      ],
+      "button": {
+        "label": "Solicitar cotización",
+        "href": "/Contacto"
+      }
     },
     {
       "sectionType": "carouselSection",

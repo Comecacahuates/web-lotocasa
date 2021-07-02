@@ -13,7 +13,11 @@
       "sectionType": "textSection",
       "texts": [
         "Con nuestra amplia experiencia en el mercado y excelente servicio, tendrás espacios ideales para ejecutar tus juntas, capacitaciones y eventos corporativos con la atención personalizada de nuestro equipo."
-      ]
+      ],
+      "button": {
+        "label": "Solicitar cotización",
+        "href": "/Contacto"
+      }
     },
     {
       "sectionType": "carouselSection",

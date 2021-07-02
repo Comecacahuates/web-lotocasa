@@ -15,12 +15,14 @@ export interface TextSectionProps {
 /** Componente de sección de texto */
 export default function TextSectionUI(props: TextSectionProps) {
   /* Propiedades */
-  const textSection: TextSection = props.textSection;
-  const backgroundImage: ImageFigure | undefined = textSection.backgroundImage;
-  const title: string | undefined = textSection.title;
-  const id: string = textSection.id || "";
-  const texts: string[] = textSection.texts;
-  const subsections: TextSection[] = textSection.subsections || [];
+  const {
+    backgroundImage,
+    title,
+    id,
+    texts,
+    button,
+    subsections,
+  }: TextSection = props.textSection;
 
   /* Clases */
   const bgAuxClass: string = backgroundImage ? "bg-aux" : "";
@@ -46,45 +48,56 @@ export default function TextSectionUI(props: TextSectionProps) {
                 {text}
               </ReactMarkdown>
             ))}
+            {button !== undefined ? (
+              <p>
+                <ButtonLink href={button.href}>{button.label}</ButtonLink>
+              </p>
+            ) : (
+              ""
+            )}
           </Col>
         </Row>
       ) : (
         ""
       )}
-      <Row xs={1} md={2} className="gx-5 py-3">
-        {/* Subsecciones */}
-        {subsections.map((subsection: TextSection, index: number) => (
-          <SubsectionCol
-            key={index}
-            title={subsection.title}
-            hasBackgroundImage={backgroundImage !== undefined}
-          >
-            {subsection.texts.map((text: string, index: number) => (
-              <ReactMarkdown
-                key={index}
-                components={{
-                  p: ({ node, children, ...props }) => (
-                    <p className="lead" {...props}>
-                      <span className={bgAuxClass}>{children}</span>
-                    </p>
-                  ),
-                }}
-              >
-                {text}
-              </ReactMarkdown>
-            ))}
-            {subsection.button !== undefined ? (
-              <p>
-                <ButtonLink href={subsection.button.href}>
-                  {subsection.button.label}
-                </ButtonLink>
-              </p>
-            ) : (
-              ""
-            )}
-          </SubsectionCol>
-        ))}
-      </Row>
+      {subsections ? (
+        <Row xs={1} md={2} className="gx-5 py-3">
+          {/* Subsecciones */}
+          {subsections.map((subsection: TextSection, index: number) => (
+            <SubsectionCol
+              key={index}
+              title={subsection.title}
+              hasBackgroundImage={backgroundImage !== undefined}
+            >
+              {subsection.texts.map((text: string, index: number) => (
+                <ReactMarkdown
+                  key={index}
+                  components={{
+                    p: ({ node, children, ...props }) => (
+                      <p className="lead" {...props}>
+                        <span className={bgAuxClass}>{children}</span>
+                      </p>
+                    ),
+                  }}
+                >
+                  {text}
+                </ReactMarkdown>
+              ))}
+              {subsection.button !== undefined ? (
+                <p>
+                  <ButtonLink href={subsection.button.href}>
+                    {subsection.button.label}
+                  </ButtonLink>
+                </p>
+              ) : (
+                ""
+              )}
+            </SubsectionCol>
+          ))}
+        </Row>
+      ) : (
+        ""
+      )}
     </SectionContainer>
   );
 }

@@ -14,7 +14,11 @@
       "texts": [
         "Espacios de trabajo temporales para tus colaboradores, trabajos fuera de tu empresa o para expandir tus propias instalaciones.",
         "Diferentes diseños de carpas con un perímetro de cortinas enrollables, iluminación perfecta y lona antirreflejante para mantener una temperatura ideal para tus actividades."
-      ]
+      ],
+      "button": {
+        "label": "Solicitar cotización",
+        "href": "/Contacto"
+      }
     },
     {
       "sectionType": "carouselSection",

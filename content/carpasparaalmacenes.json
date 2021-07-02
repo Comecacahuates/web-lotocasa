@@ -14,7 +14,11 @@
       "texts": [
         "Incrementa tu espacio de almacenamiento para tus mercancías o materias primas de forma temporal o definitiva en tus instalaciones.",
         "Espacios de tamaños personalizados para tus necesidades operativas con una iluminación que te permitirá trabajar cómodamente."
-      ]
+      ],
+      "button": {
+        "label": "Solicitar cotización",
+        "href": "/Contacto"
+      }
     },
     {
       "sectionType": "carouselSection",

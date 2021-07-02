@@ -13,7 +13,11 @@
       "sectionType": "textSection",
       "texts": [
         "Tus invitados quedarán fascinados con nuestras carpas de diseños espectaculares e increíbles decoraciones en tus eventos, así como la gran atención a los detalles por parte de nuestro equipo."
-      ]
+      ],
+      "button": {
+        "label": "Solicitar cotización",
+        "href": "/Contacto"
+      }
     },
     {
       "sectionType": "carouselSection",
@@ -21,14 +25,6 @@
       "carousel": {
         "wide": true,
         "items": [
-          {
-            "image": {
-              "figureType": "imageFigure",
-              "src": "/images/carpas-para-eventos/eventos-sociales/00-dos-aguas.jpg",
-              "alt": "",
-              "cover": true
-            }
-          },
           {
             "image": {
               "figureType": "imageFigure",
@@ -49,6 +45,14 @@
             "image": {
               "figureType": "imageFigure",
               "src": "/images/carpas-para-eventos/eventos-sociales/03-jaima.jpg",
+              "alt": "",
+              "cover": true
+            }
+          },
+          {
+            "image": {
+              "figureType": "imageFigure",
+              "src": "/images/carpas-para-eventos/eventos-sociales/00-dos-aguas.jpg",
               "alt": "",
               "cover": true
             }
