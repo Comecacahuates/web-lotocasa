@@ -23,7 +23,7 @@ export default function CustomersSectionUI(props: CustomersSectionProps) {
   return (
     <SectionContainer title={title}>
       {/* Lista de clientes */}
-      <div className="d-flex flex-column flex-md-row align-items-center align-items-md-stretch justify-content-evenly flex-wrap">
+      <div className="my-5 d-flex flex-row align-items-center align-items-md-stretch justify-content-evenly flex-wrap">
         {list.map((item: Customer, index: number) => (
           <div key={index} className={`my-4 ${styles.customerImageContainer}`}>
             <Image
