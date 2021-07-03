@@ -4,6 +4,7 @@ import Layout from "./layout";
 import SectionContainer from "./ui/sectioncontainer";
 import Title from "./ui/title";
 import CarouselSectionUI from "./carouselsection";
+import GallerySectionUI from "./gallerysection";
 import TextSectionUI from "./textsection";
 import CatalogueSectionUI from "./cataloguesection";
 import CustomersSectionUI from "./customerssection";
@@ -13,6 +14,7 @@ import {
   Page,
   Section,
   CarouselSection,
+  GallerySection,
   TextSection,
   CatalogueSection,
   CustomersSection,
@@ -65,6 +67,17 @@ export default function PageBuilder(props: PageBuilderProps) {
             <CarouselSectionUI
               key={index}
               carouselSection={section as CarouselSection}
+            />
+          );
+        }
+        {
+          /* Sección de Galería */
+        }
+        if (section.sectionType === "gallerySection") {
+          return (
+            <GallerySectionUI
+              key={index}
+              gallerySection={section as GallerySection}
             />
           );
         }
