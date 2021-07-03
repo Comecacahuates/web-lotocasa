@@ -30,6 +30,12 @@ export type CarouselSection = Section & {
   fluid: boolean;
 };
 
+/** Sección de galería */
+export type GallerySection = Section & {
+  sectionType: "gallerySection";
+  carousel: CarouselFigure;
+};
+
 /** Sección de clientes */
 export type CustomersSection = Section & {
   sectionType: "customersSection";

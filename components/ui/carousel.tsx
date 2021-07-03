@@ -1,27 +1,26 @@
 /** @jsxImportSource @emotion/react */
 import * as React from "react";
-import { css } from "@emotion/react";
-import Carousel from "react-bootstrap/Carousel";
+import Carousel, { CarouselProps } from "react-bootstrap/Carousel";
 import Image from "./image";
 import ButtonLink from "./buttonlink";
 import { CarouselFigure, CarouselItem } from "../../@types/pagestructure";
 import styles from "./carousel.module.scss";
 
 /** Propiedades del componente de carrusel */
-export interface CarouselProps {
+export interface CarouselUIProps extends CarouselProps {
   carousel: CarouselFigure;
 }
 
 /** Componente de carrusel */
-export default function CarouselUI(props: CarouselProps) {
+export default function CarouselUI(props: CarouselUIProps) {
   /* Propiedades */
-  const carousel: CarouselFigure = props.carousel;
+  const { carousel, ...carouselProps } = props;
   const wide: boolean = carousel.wide;
   const items: CarouselItem[] = carousel.items;
 
   /* Renderización */
   return (
-    <Carousel>
+    <Carousel {...carouselProps}>
       {items.map((item: CarouselItem, index: number) => (
         <Carousel.Item
           key={index}
