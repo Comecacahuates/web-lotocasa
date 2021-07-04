@@ -15,11 +15,26 @@ export default function GalleryList(props: GalleryListProps) {
   /* Propiedades */
   const { images, onImageSelect } = props;
 
+  /* Referencias */
+  const containerRef = React.useRef<HTMLDivElement>(null);
+
+  /* Manejo de eventos */
+  const onScrollButtonClick = (left: boolean) => {
+    if (containerRef.current === null) return;
+
+    const offset: number = 300;
+    if (left) containerRef.current.scrollLeft -= offset;
+    else containerRef.current.scrollLeft += offset;
+  };
+
   /* Renderización */
   return (
     <div className="w-100 d-flex">
       {/* Imágenes */}
-      <div className={`flex-grow-1 d-flex overflow-auto ${styles.container}`}>
+      <div
+        ref={containerRef}
+        className={`flex-grow-1 d-flex overflow-auto ${styles.container}`}
+      >
         {images.map((image: ImageFigure, index: number) => (
           <div
             key={index}
@@ -39,15 +54,23 @@ export default function GalleryList(props: GalleryListProps) {
         ))}
       </div>
       {/* Botón izquierda */}
-      <div className="order-first flex-shrink-0 p-2">
-        <div className="h-100 d-flex align-items-center">
-          <Icon icon="chevron-left" role="button" className="fs-3" />
+      <div className="order-first flex-shrink-0">
+        <div
+          className="h-100 d-flex align-items-center p-2"
+          role="button"
+          onClick={() => onScrollButtonClick(true)}
+        >
+          <Icon icon="chevron-left" className="fs-3" />
         </div>
       </div>
       {/* Botón derecha */}
-      <div className="order-last flex-shrink-0 p-2">
-        <div className="h-100 d-flex align-items-center">
-          <Icon icon="chevron-right" role="button" className="fs-3" />
+      <div className="order-last flex-shrink-0">
+        <div
+          className="h-100 d-flex align-items-center p-2"
+          role="button"
+          onClick={() => onScrollButtonClick(false)}
+        >
+          <Icon icon="chevron-right" className="fs-3" />
         </div>
       </div>
     </div>
