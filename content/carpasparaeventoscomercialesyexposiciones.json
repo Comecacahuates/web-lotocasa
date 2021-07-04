@@ -20,7 +20,7 @@
       }
     },
     {
-      "sectionType": "carouselSection",
+      "sectionType": "gallerySection",
       "title": "Galería",
       "carousel": {
         "wide": true,
