@@ -1,4 +1,6 @@
 import * as React from "react";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import SectionContainer from "./ui/sectioncontainer";
 import Gallery from "./ui/gallery";
 import { GallerySection } from "../@types/pagestructure";
@@ -17,7 +19,11 @@ export default function GallerySectionUI(props: GallerySectionProps) {
   /* Renderización */
   return (
     <SectionContainer title={title}>
-      <Gallery carousel={carousel} />
+      <Row className="px-0 py-3">
+        <Col className="px-0">
+          <Gallery carousel={carousel} />
+        </Col>
+      </Row>
     </SectionContainer>
   );
 }
