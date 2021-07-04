@@ -22,7 +22,7 @@ export default function GalleryList(props: GalleryListProps) {
   const onScrollButtonClick = (left: boolean) => {
     if (containerRef.current === null) return;
 
-    const offset: number = 300;
+    const offset: number = 250;
     if (left) containerRef.current.scrollLeft -= offset;
     else containerRef.current.scrollLeft += offset;
   };
