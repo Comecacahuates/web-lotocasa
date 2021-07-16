@@ -22,6 +22,7 @@ export default function Gallery(props: GalleryProps) {
       <Carousel
         carousel={carousel}
         activeIndex={activeIndex}
+        indicators={false}
         onSelect={(index: number) => setActiveIndex(index)}
       />
       <GalleryList
