@@ -23,7 +23,7 @@ export default function ImageUI(props: ImageProps) {
         className="d-block w-100"
         layout="fill"
         objectFit="cover"
-        objectPosition="50% 50%"
+        objectPosition="center top"
       />
     );
   } else {
@@ -35,7 +35,7 @@ export default function ImageUI(props: ImageProps) {
         height={height}
         css={css`
           object-fit: cover;
-          object-position: 50% 50%;
+          object-position: center center;
         `}
       />
     );
