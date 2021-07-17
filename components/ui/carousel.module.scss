@@ -9,27 +9,24 @@
 @import "bootstrap/scss/mixins";
 
 .carouselitem {
-  height: 450px;
+  height: 40vh;
   @include media-breakpoint-up(md) {
-    height: 50vw;
+    height: 60vh;
   }
   @include media-breakpoint-up(lg) {
-    height: 40vw;
+    height: 80vh;
   }
 }
 
 .carouselitemwide {
-  height: 280px;
-  @include media-breakpoint-up(sm) {
-    height: 380px;
-  }
+  height: 70vw;
   @include media-breakpoint-up(md) {
-    height: 450px;
+    height: 500px;
   }
   @include media-breakpoint-up(lg) {
-    height: 550px;
+    height: 600px;
   }
   @include media-breakpoint-up(xl) {
-    height: 600px;
+    height: 800px;
   }
 }
