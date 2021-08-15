@@ -9,7 +9,7 @@
         "sectionType": "contactFormSection",
         "title": "Solicita una cotización",
         "contactForm": {
-          "submitUrl": "https://submit-form.com/8J2rw5U2",
+          "submitUrl": "https://formspree.io/f/xnqlopak",
           "nameLabel": "Nombre",
           "emailLabel": "Correo electrónico",
           "phoneLabel": "Número de teléfono",
